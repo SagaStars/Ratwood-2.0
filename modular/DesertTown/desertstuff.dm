@@ -230,6 +230,7 @@
 	attacked_sound = 'sound/foley/hit_rock.ogg'
 	static_debris = list(/obj/item/natural/stone = 10)
 	pixel_x = -48
+	pixel_y = -18
 	layer = 4.81
 	plane = GAME_PLANE_UPPER
 
