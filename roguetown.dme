@@ -2803,6 +2803,7 @@
 #include "modular\DesertTown\desertclothing.dm"
 #include "modular\DesertTown\desertfloor.dm"
 #include "modular\DesertTown\desertmapgen.dm"
+#include "modular\DesertTown\desertspawns.dm"
 #include "modular\DesertTown\desertstuff.dm"
 #include "modular\DesertTown\desertwalls.dm"
 #include "modular\DesertTown\desertweapons.dm"
