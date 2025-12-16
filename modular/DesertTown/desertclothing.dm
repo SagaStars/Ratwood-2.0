@@ -554,24 +554,19 @@
 	// icon_state = "exoticsilkmaskr"
 	// item_state = "exoticsilkmaskr"
 
+//Because some people can't live without BiS
+/obj/item/clothing/shoes/roguetown/shalal/reinforced
+	name = "fine babouche"
+	desc = "Sturdy boots stitched together from cured leather. Stylish, firm, and sport a satisfying 'squeek' with each step."
+	icon_state = "shalal"//change when I get around to it
+	item_state = "shalal"
+	armor = ARMOR_LEATHER_GOOD
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_TWIST)	//Same as gloves
+	max_integrity = 100			//Half that of iron boots
 
-//shields are like armour right?
-
-/obj/item/rogueweapon/shield/tower/zybantine
-	name = "Brass shield"
-	desc = "A Sturdy shield from Zybantia."
-	icon_state = "zybshield"
-	force = 20
-	throwforce = 10
-	throw_speed = 1
-	throw_range = 3
-	wlength = WLENGTH_SHORT
-	resistance_flags = null
-	flags_1 = CONDUCT_1
-	wdefense = 9
-	coverage = 40
-	attacked_sound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
-	parrysound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
-	max_integrity = 300
-	blade_dulling = DULLING_BASH
-	sellprice = 30
+	
+/obj/item/clothing/shoes/roguetown/boots/armor/shalal
+	name = "plated babouche"
+	desc = "Sturdy boots stitched together from cured leather. Stylish, firm, and sport a satisfying 'squeek' with each step."
+	icon_state = "shalal"//change when I get around to it
+	item_state = "shalal"
