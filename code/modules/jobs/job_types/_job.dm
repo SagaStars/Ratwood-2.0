@@ -136,6 +136,8 @@
 	///Jobs that change their advclass examine as the user levels up.
 	var/adaptive_name = FALSE
 
+	/// List of map names this job is allowed on. If null, allowed on all maps.
+	var/list/allowed_maps = null
 
 /*
 	How this works, its CTAG_DEFINE = amount_to_attempt_to_role
@@ -410,6 +412,12 @@
 	name = "Standard Gear"
 
 	var/jobtype = null
+
+
+/datum/job/proc/map_check()
+    if(allowed_maps && !(SSmapping.config.map_name in allowed_maps))
+        return FALSE
+    return TRUE
 
 /datum/outfit/job/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
