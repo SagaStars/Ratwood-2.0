@@ -12,7 +12,8 @@
 	// 	/datum/job/roguetown/adventurer = 69
 	)
 	title_adjust = list(
-		/datum/job/roguetown/marshal = list(display_title = "Mayor")//, f_title = "Lady Castellan")
+		/datum/job/roguetown/marshal = list(display_title = "Mayor")
+		/datum/job/roguetown/priest =  list(display_title = "High Priest", f_title = "High Priestess")
 	)
 	tutorial_adjust = list(
 		/datum/job/roguetown/marshal = "CHANGE THIS LATER. Manage the town outside of the palace. Hang out in the mayor building.."
@@ -41,7 +42,7 @@
 		/datum/job/roguetown/butler,
 		/datum/job/roguetown/councillor,
 		/datum/job/roguetown/magician,
-		// /datum/job/roguetown/jester,
+		/datum/job/roguetown/jester, //are jesters really a desert thing?
 		// /datum/job/roguetown/physician,
 
 		/datum/job/roguetown/manorguard,
