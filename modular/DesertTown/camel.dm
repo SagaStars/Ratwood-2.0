@@ -36,7 +36,7 @@
 	.=..()
 
 /mob/living/simple_animal/hostile/retaliate/rogue/camel
-	icon = 'icons/roguetown/mob/monster/camel.dmi'
+	icon = 'modular/DesertTown/icons/camel.dmi'
 	name = "camel"
 	desc = ""
 	icon_state = "camel"
