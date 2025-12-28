@@ -1,11 +1,11 @@
 
 
-/mob/living/simple_animal/hostile/retaliate/rogue/camel/find_food()
-	..()
-	var/obj/structure/spacevine/SV = locate(/obj/structure/spacevine) in loc
-	if(SV)
-		SV.eat(src)
-		food = max(food + 30, 100)
+// /mob/living/simple_animal/hostile/retaliate/rogue/camel/find_food()
+// 	..()
+// 	var/obj/structure/spacevine/SV = locate(/obj/structure/spacevine) in loc
+// 	if(SV)
+// 		SV.eat(src)
+// 		food = max(food + 30, 100)
 
 /mob/living/simple_animal/hostile/retaliate/rogue/camel/update_icon()
 	cut_overlays()
