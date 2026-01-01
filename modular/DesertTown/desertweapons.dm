@@ -21,9 +21,3 @@
 	desc = "A large zybantine sword with a single-edged blade, a crossguard and a knife-like hilt. "
 	icon = 'modular/DesertTown/icons/items/desertweapons64.dmi'
 	icon_state = "Kmesser"
-
-	
-/obj/item/rogueweapon/sword/sabre/shamshir
-	name = "long scimitar"
-	icon = 'modular/DesertTown/icons/items/desertweapons64.dmi'
-	icon_state = "Kmesser"
