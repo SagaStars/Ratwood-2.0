@@ -21,7 +21,7 @@
 	min_pq = 3
 	max_pq = null
 	round_contrib_points = 2
-	//allowed_maps = list("Desert Town")
+	allowed_maps = list("Desert Town")
 	social_rank = SOCIAL_RANK_YEOMAN
 	cmode_music = 'sound/music/combat_ManAtArms.ogg'
 	job_subclasses = list(

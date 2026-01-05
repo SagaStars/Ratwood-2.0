@@ -10,6 +10,7 @@
 	allowed_races = RACES_TOLERATED_UP
 	allowed_sexes = list(MALE, FEMALE)
 	advclass_cat_rolls = list(CTAG_LORD = 20)
+	allowed_maps = list("Desert Town")
 
 	spells = list(
 		/obj/effect/proc_holder/spell/self/grant_title,

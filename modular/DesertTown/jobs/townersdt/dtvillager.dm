@@ -23,7 +23,7 @@
 	same_job_respawn_delay = 0
 	cmode_music = 'sound/music/cmode/towner/combat_towner.ogg'
 	social_rank = SOCIAL_RANK_PEASANT
-	//allowed_maps = list("Desert Town")
+	allowed_maps = list("Desert Town")
 	job_subclasses = list(
 		/datum/advclass/dtbarbersurgeon,
 		/datum/advclass/dtblacksmith,

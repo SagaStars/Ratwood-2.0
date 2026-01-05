@@ -19,7 +19,7 @@
 	noble_income = 20
 	min_pq = 1
 	max_pq = null
-	//allowed_maps = list("Desert Town")
+	allowed_maps = list("Desert Town")
 	round_contrib_points = 3
 	social_rank = SOCIAL_RANK_ROYAL
 	cmode_music = 'sound/music/combat_noble.ogg'

@@ -6,7 +6,7 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	//allowed_maps = list("Desert Town")
+	allowed_maps = list("Desert Town")
 
 	allowed_races = RACES_NO_CONSTRUCT		//Nobility, no construct
 	allowed_sexes = list(MALE, FEMALE)

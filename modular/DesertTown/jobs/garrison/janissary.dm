@@ -15,7 +15,7 @@
 	
 	display_order = JDO_TOWNGUARD
 	whitelist_req = TRUE
-	//allowed_maps = list("Desert Town")
+	allowed_maps = list("Desert Town")
 
 	outfit = /datum/outfit/job/roguetown/janissary
 	advclass_cat_rolls = list(CTAG_JANISSARY = 20)
