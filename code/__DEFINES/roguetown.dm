@@ -334,7 +334,8 @@ GLOBAL_LIST_EMPTY(round_join_times)
 #define CTAG_SLAVEMASTER	"CAT_SLAVEMASTER"
 #define CTAG_DTTOWNER		"CAT_DTTOWNER"
 #define CTAG_PSLAVE			"CAT_PSLAVE"
-#define CTAG_DTCOURTMAGE	"CTAG_DTCOURTMAGE"
+#define CTAG_DTCOURTMAGE	"CAT_DTCOURTMAGE"
+#define CTAG_HEADSLAVE		"CAT_HEADSLAVE"		// Seneschal's aesthetic choices.
 
 
 // List of mono-class categories. Only here for standardisation sake, but can be added on if desired.
