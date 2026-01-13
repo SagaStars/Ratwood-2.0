@@ -4489,11 +4489,8 @@
 /turf/open/floor/rogue/dirt/road/desert,
 /area/rogue/under/cave)
 "cPT" = (
+/obj/structure/fluff/railing/wood,
 /obj/structure/fluff/railing/wood{
-	icon = 'modular/DesertTown/icons/alt/railing.dmi'
-	},
-/obj/structure/fluff/railing/wood{
-	icon = 'modular/DesertTown/icons/alt/railing.dmi';
 	dir = 4;
 	pixel_x = 7
 	},
@@ -23894,12 +23891,9 @@
 "oTq" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
-	pixel_x = -8;
-	icon = 'modular/DesertTown/icons/alt/railing.dmi'
+	pixel_x = -8
 	},
-/obj/structure/fluff/railing/wood{
-	icon = 'modular/DesertTown/icons/alt/railing.dmi'
-	},
+/obj/structure/fluff/railing/wood,
 /turf/open/floor/rogue/dunes,
 /area/rogue/outdoors/desert)
 "oTA" = (
@@ -24779,7 +24773,6 @@
 /area/rogue/indoors/deserttown/warden)
 "psI" = (
 /obj/structure/fluff/railing/wood{
-	icon = 'modular/DesertTown/icons/alt/railing.dmi';
 	dir = 1;
 	pixel_y = 5
 	},
@@ -28515,8 +28508,7 @@
 /obj/structure/flora/roguegrass,
 /obj/structure/fluff/railing/wood{
 	dir = 8;
-	pixel_x = -8;
-	icon = 'modular/DesertTown/icons/alt/railing.dmi'
+	pixel_x = -8
 	},
 /turf/open/floor/rogue/desert_grass,
 /area/rogue/outdoors/desert)
@@ -29597,7 +29589,6 @@
 /area/rogue/indoors/town/church)
 "sbD" = (
 /obj/structure/fluff/railing/wood{
-	icon = 'modular/DesertTown/icons/alt/railing.dmi';
 	dir = 4;
 	pixel_x = 7
 	},
@@ -30002,11 +29993,9 @@
 "snn" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
-	pixel_x = -8;
-	icon = 'modular/DesertTown/icons/alt/railing.dmi'
+	pixel_x = -8
 	},
 /obj/structure/fluff/railing/wood{
-	icon = 'modular/DesertTown/icons/alt/railing.dmi';
 	dir = 1;
 	pixel_y = 5
 	},
@@ -32750,7 +32739,6 @@
 	layer = 5
 	},
 /obj/structure/fluff/railing/wood{
-	icon = 'modular/DesertTown/icons/alt/railing.dmi';
 	dir = 4;
 	pixel_x = 7
 	},
@@ -34336,9 +34324,7 @@
 /turf/open/floor/rogue/dunes,
 /area/rogue/outdoors/desertdeep)
 "uXg" = (
-/obj/structure/fluff/railing/wood{
-	icon = 'modular/DesertTown/icons/alt/railing.dmi'
-	},
+/obj/structure/fluff/railing/wood,
 /turf/open/floor/rogue/dunes,
 /area/rogue/outdoors/desert)
 "uXi" = (
@@ -35374,11 +35360,9 @@
 "vFw" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
-	pixel_x = -8;
-	icon = 'modular/DesertTown/icons/alt/railing.dmi'
+	pixel_x = -8
 	},
 /obj/structure/fluff/railing/wood{
-	icon = 'modular/DesertTown/icons/alt/railing.dmi';
 	dir = 1
 	},
 /turf/open/floor/rogue/dunes,
@@ -35991,7 +35975,6 @@
 /area/rogue/indoors/deserttown/manor)
 "vTM" = (
 /obj/structure/fluff/railing/wood{
-	icon = 'modular/DesertTown/icons/alt/railing.dmi';
 	dir = 1
 	},
 /turf/open/floor/rogue/dunes,
@@ -38884,8 +38867,7 @@
 "xJZ" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
-	pixel_x = -8;
-	icon = 'modular/DesertTown/icons/alt/railing.dmi'
+	pixel_x = -8
 	},
 /turf/open/floor/rogue/dunes,
 /area/rogue/outdoors/desert)
@@ -380833,7 +380815,7 @@ jVZ
 jVZ
 hQx
 hQx
-gUs
+pmY
 qjz
 iNs
 vye
@@ -381135,7 +381117,7 @@ gUs
 gUs
 hQx
 hQx
-hQx
+pmY
 gUs
 qjz
 hYa
@@ -381437,7 +381419,7 @@ gUs
 gUs
 hQx
 hQx
-hQx
+pmY
 gUs
 gUs
 asG
@@ -381739,7 +381721,7 @@ gUs
 gUs
 hQx
 hQx
-hQx
+pmY
 gUs
 gUs
 gUs
@@ -382039,7 +382021,7 @@ gUs
 gUs
 gUs
 hQx
-hQx
+pmY
 hQx
 gUs
 gUs
@@ -382341,7 +382323,7 @@ gUs
 gUs
 gUs
 gUs
-gUs
+pmY
 hQx
 hQx
 gUs
@@ -382643,7 +382625,7 @@ gUs
 gUs
 gUs
 gUs
-gUs
+pmY
 hQx
 hQx
 gUs
@@ -382944,7 +382926,7 @@ gUs
 gUs
 gUs
 gUs
-gUs
+hQx
 pmY
 hQx
 hQx
@@ -383245,8 +383227,8 @@ naM
 gUs
 gUs
 gUs
+gUs
 hQx
-pmY
 hQx
 pmY
 hQx
@@ -383547,8 +383529,8 @@ naM
 naM
 gUs
 gUs
-pmY
 gUs
+hQx
 hQx
 pmY
 gUs
@@ -383848,8 +383830,8 @@ naM
 naM
 naM
 gUs
-pmY
-pmY
+gUs
+gUs
 hQx
 hQx
 hQx
@@ -384149,8 +384131,8 @@ naM
 naM
 gUs
 gUs
-pmY
-pmY
+gUs
+gUs
 hQx
 hQx
 hQx
@@ -384455,7 +384437,7 @@ gUs
 hQx
 hQx
 hQx
-pmY
+hQx
 gUs
 gUs
 gUs
@@ -384755,9 +384737,9 @@ pmY
 hQx
 hQx
 hQx
-gUs
-pmY
-gUs
+hQx
+hQx
+hQx
 gUs
 gUs
 gUs
@@ -385053,24 +385035,24 @@ gUs
 gUs
 pmY
 hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+gUs
+gUs
+gUs
+gUs
+gUs
 gUs
 hQx
 hQx
 hQx
-pmY
-pmY
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
+hQx
+hQx
+hQx
 hQx
 qfz
 hQx
@@ -385323,55 +385305,55 @@ gUs
 gUs
 hQx
 hQx
+hQx
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+gUs
+gUs
+gUs
+gUs
+gUs
 pmY
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-hQx
-hQx
-hQx
-gUs
 pmY
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
 hQx
 hQx
 hQx
@@ -385625,8 +385607,8 @@ gUs
 gUs
 pmY
 hQx
-gUs
-gUs
+hQx
+hQx
 gUs
 gUs
 gUs
@@ -385657,22 +385639,22 @@ pmY
 hQx
 hQx
 hQx
-gUs
-gUs
-gUs
-gUs
+hQx
+pmY
+pmY
+pmY
 vID
 gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-pmY
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
 hQx
 hQx
 hQx
@@ -385928,6 +385910,7 @@ gUs
 gUs
 pmY
 gUs
+hQx
 gUs
 gUs
 gUs
@@ -385953,25 +385936,24 @@ gUs
 gUs
 gUs
 gUs
-gUs
-gUs
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
 hQx
 hQx
 pmY
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
+pmY
+pmY
 gUs
 aEH
 hQx
@@ -386230,6 +386212,8 @@ gUs
 gUs
 gUs
 gUs
+hQx
+hQx
 gUs
 gUs
 gUs
@@ -386253,24 +386237,22 @@ gUs
 gUs
 gUs
 gUs
-gUs
-gUs
-gUs
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
+hQx
 pmY
-hQx
-hQx
-hQx
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
+pmY
+pmY
+pmY
+pmY
 gUs
 gUs
 gUs
@@ -386533,6 +386515,10 @@ gUs
 gUs
 gUs
 hQx
+hQx
+hQx
+hQx
+hQx
 gUs
 gUs
 gUs
@@ -386552,12 +386538,8 @@ gUs
 gUs
 gUs
 gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
+hQx
+hQx
 hQx
 hQx
 gUs
@@ -386837,6 +386819,10 @@ gUs
 pmY
 hQx
 gUs
+hQx
+hQx
+hQx
+hQx
 gUs
 gUs
 gUs
@@ -386854,14 +386840,10 @@ gUs
 gUs
 gUs
 gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
+hQx
+hQx
+hQx
+pmY
 gUs
 snn
 xJZ
@@ -387142,7 +387124,7 @@ pmY
 gUs
 hQx
 gUs
-gUs
+hQx
 gUs
 gUs
 gUs
@@ -387160,9 +387142,9 @@ gUs
 gUs
 gUs
 gUs
-pmY
-gUs
-gUs
+hQx
+hQx
+hQx
 gUs
 gUs
 psI
@@ -387443,28 +387425,28 @@ gUs
 gUs
 gUs
 gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-naM
-naM
-naM
-naM
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-pmY
-gUs
+hQx
+hQx
 hQx
 gUs
+gUs
+gUs
+gUs
+gUs
+naM
+naM
+naM
+naM
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+hQx
+hQx
+hQx
+pmY
 gUs
 gUs
 psI
@@ -387746,7 +387728,7 @@ gUs
 gUs
 hQx
 pmY
-gUs
+hQx
 hQx
 gUs
 gUs
@@ -387764,9 +387746,9 @@ gUs
 gUs
 pmY
 hQx
-gUs
 hQx
-gUs
+hQx
+hQx
 gUs
 gUs
 psI
@@ -388049,8 +388031,8 @@ gUs
 gUs
 hQx
 pmY
-gUs
-gUs
+hQx
+hQx
 pmY
 gUs
 gUs
@@ -388063,11 +388045,11 @@ gUs
 gUs
 gUs
 gUs
+pbH
 hQx
 hQx
 gUs
-gUs
-gUs
+pmY
 gUs
 gUs
 gUs
@@ -388353,23 +388335,23 @@ gUs
 gUs
 gUs
 hQx
-gUs
-pmY
-gUs
-gUs
-gUs
-naM
-naM
-naM
-gUs
-gUs
-gUs
 hQx
 pmY
-hQx
-hQx
 gUs
 gUs
+gUs
+naM
+naM
+naM
+gUs
+gUs
+gUs
+gUs
+gUs
+hQx
+hQx
+hQx
+pmY
 gUs
 gUs
 gUs
@@ -388655,8 +388637,8 @@ gUs
 gUs
 gUs
 gUs
-gUs
-pmY
+hQx
+hQx
 gUs
 gUs
 gUs
@@ -388666,12 +388648,12 @@ gUs
 gUs
 gUs
 gUs
+gUs
+hQx
 hQx
 hQx
 pmY
 pmY
-gUs
-gUs
 gUs
 gUs
 gUs
@@ -388958,22 +388940,22 @@ gUs
 gUs
 gUs
 gUs
-gUs
-pmY
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-gUs
-hQx
-hQx
 hQx
 pmY
 gUs
 gUs
 gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+gUs
+hQx
+hQx
+hQx
+pmY
+hQx
 gUs
 gUs
 gUs
@@ -389268,13 +389250,13 @@ gUs
 gUs
 gUs
 gUs
-srn
-hQx
-hQx
 hQx
 gUs
 gUs
-gUs
+hQx
+hQx
+hQx
+pmY
 gUs
 gUs
 gUs
@@ -389570,13 +389552,13 @@ gUs
 gUs
 gUs
 gUs
-hQx
+gUs
+gUs
+gUs
+gUs
 hQx
 hQx
 pmY
-gUs
-gUs
-gUs
 gUs
 gUs
 gUs
@@ -389866,19 +389848,19 @@ gUs
 gUs
 gUs
 gUs
-pmY
-hQx
-pmY
-gUs
-gUs
-gUs
-hQx
 hQx
 hQx
 pmY
 gUs
 gUs
 gUs
+gUs
+gUs
+gUs
+hQx
+hQx
+hQx
+hQx
 gUs
 gUs
 gUs
@@ -390169,18 +390151,18 @@ gUs
 gUs
 gUs
 pmY
-pmY
+hQx
+hQx
 hQx
 gUs
 gUs
-pmY
+gUs
+gUs
+gUs
 hQx
 hQx
+hQx
 pmY
-gUs
-gUs
-gUs
-gUs
 gUs
 gUs
 gUs
@@ -390473,16 +390455,16 @@ gUs
 eVE
 pmY
 hQx
-pmY
-pmY
-pmY
 hQx
 hQx
 pmY
 gUs
 gUs
 gUs
-gUs
+hQx
+hQx
+hQx
+pmY
 gUs
 gUs
 gUs
@@ -390776,14 +390758,14 @@ gUs
 pmY
 hQx
 hQx
-pmY
+hQx
 sFA
+pmY
+gUs
+srn
 hQx
 hQx
 pmY
-gUs
-gUs
-gUs
 gUs
 gUs
 gUs
@@ -391081,11 +391063,11 @@ hQx
 hQx
 hQx
 hQx
+pmY
 hQx
 pmY
-gUs
-gUs
-gUs
+hQx
+pmY
 gUs
 gUs
 gUs
@@ -391383,11 +391365,11 @@ hQx
 hQx
 hQx
 hQx
+pmY
+hQx
+hQx
 hQx
 pmY
-gUs
-gUs
-gUs
 gUs
 gUs
 gUs
@@ -391688,8 +391670,8 @@ hQx
 hQx
 hQx
 hQx
-gUs
-gUs
+hQx
+pmY
 gUs
 gUs
 gUs
@@ -391990,8 +391972,8 @@ hQx
 hQx
 hQx
 hQx
-gUs
-gUs
+hQx
+pmY
 gUs
 gUs
 gUs
@@ -392292,8 +392274,8 @@ pmY
 hQx
 hQx
 hQx
-gUs
-gUs
+hQx
+pmY
 gUs
 gUs
 gUs
@@ -392591,10 +392573,10 @@ hQx
 eUX
 eUX
 pmY
+pmY
 hQx
 hQx
 hQx
-gUs
 gUs
 gUs
 gUs
@@ -400744,7 +400726,7 @@ eUX
 eUX
 eUX
 nzM
-kmX
+uSI
 wSW
 fZr
 wSW
