@@ -1,4 +1,4 @@
-"aj" = (/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp/exterior)
+"aj" = (/obj/machinery/light/rogue/wallfire/candle,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp/exterior)
 "ao" = (/obj/effect/decal/cobbleedge{dir = 1; icon_state = "borderfall"; pixel_y = 8},/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/dunes,/area/rogue/outdoors/banditcamp/exterior)
 "ap" = (/obj/structure/fluff/nest,/turf/open/floor/rogue/hay,/area/rogue/outdoors/banditcamp)
 "as" = (/obj/item/natural/rock,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp/exterior)
@@ -151,7 +151,7 @@
 "Ik" = (/obj/structure/flora/roguegrass,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/desertdeep/safe)
 "IB" = (/obj/structure/arcyne_wall{desc = "A wall of pure arcyne force. Powerful covetous magic protects the dragon's hoard."; max_integrity = 9999; name = "Wall of Greed"},/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
 "IK" = (/obj/structure/closet/crate/chest/gold,/obj/item/dildo/silver,/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
-"IP" = (/obj/structure/flora/roguetree/palm{pixel_x = -22; pixel_y = 3},/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp/exterior)
+"IP" = (/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp/exterior)
 "Jj" = (/turf/closed/wall/mineral/rogue/tent,/area/rogue/outdoors/banditcamp)
 "Jo" = (/obj/structure/table/wood{icon_state = "longtable"},/obj/item/roguegem/amethyst,/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
 "Jr" = (/obj/structure/flora/roguegrass,/turf/open/floor/rogue/dirt/road/desert,/area/rogue/outdoors/banditcamp)
@@ -220,7 +220,7 @@
 "VA" = (/obj/structure/gate/bars/preopen{gid = "bandit"; name = "Abandoned Fort"; redstone_id = "bandit"},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
 "VN" = (/obj/structure/bed/rogue/inn/wool,/obj/item/bedsheet/rogue/cloth,/turf/open/floor/rogue/twig,/area/rogue/outdoors/banditcamp)
 "VQ" = (/obj/structure/flora/roguegrass,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp/exterior)
-"VT" = (/obj/machinery/light/rogue/wallfire/candle,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp/exterior)
+"VT" = (/obj/structure/flora/roguetree/palm{pixel_x = -22; pixel_y = 3},/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp/exterior)
 "WI" = (/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/desertdeep/safe)
 "Xk" = (/turf/closed/mineral/rogue/bedrock,/area/rogue/outdoors/desertdeep/safe)
 "XN" = (/obj/machinery/gear_painter,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
@@ -253,7 +253,7 @@ tStStStStStSySySySjmlFOaPpgKPpPpUdPpgKwBeaMljmEqDKDKDKHwjmPpPpjmPpACjmVePpjmfEDz
 tStStStStStSySySySjmPpPpPpvqPpPpPpPpvqPpczPpjmjmjmjmofjmjmjmUDjmjmjmjmjmJEjmMoDzDzDzzkwztStStStStStS
 tStStStStStStStStSjmMlczPpgKPpPpwBPpgKPpwBlFjmjljGExQBRkPpPpPpOaPpPpPpeaPpjmwzwzlLwzwzwztStStStStStS
 tStStStStStStStStSjmjmHMjmjmMjPpPpCijmjmHMjmjmQBQBQBQBQBPpNGaQLzaQigNGPpxzjmPpPpPpfdwztStStStStStStS
-tStStStStStStStStSgJjmxyajwIHMAXAXHMjmYzIPUJjmaVQBjeQBJvwBBDYWYVAzAOjwPpwBmnPpPpPpruwztStStStStStStS
+tStStStStStStStStSgJjmxyIPwIHMAXAXHMjmYzVTUJjmaVQBjeQBJvwBBDYWYVAzAOjwPpwBmnPpPpPpruwztStStStStStStS
 tStStStStStStStStSgJjmxyxywIhTznznznroVQUJUJjmqjQBQBBzJvPpgklZmWmWkizbPpPpmnPpPpPpXNwztStStStStStStS
 tStStStStStStStSPLqewBxyyNznznznznMMroUJUJUJjmjmaKxvjmjmPpNGBDFEEocXNGwBEFjmwzhowzwzwztStStStStStStS
 tStStStStStStStSwBwBjmasxywIznznzndbVQUJUJUJUJUJUJUJbrjmPpPpPpwBPpPpPpPpzWjmQxQBQBcGjmtStStStStStStS
@@ -266,22 +266,22 @@ tStStStSwBwBtSjmwBPpjmxyxywIznznxyxyxyhThThThTgRhTjWznznznxXxbxbxbxbgvznznjWzfCt
 tStStStStStStSjmPpwBjmxyxyjWznznznhThThThThThThThThTznznznBoaoTPTPaoBoznznznizOsOsJXtStStStStStStStS
 tStStStStStSqGjmPpPpjmxyxywIznznznhThThTznznhThTjWznznznjWhThThTjWznznjWznjWzfOsOsVNKvtStStStStStStS
 tStStStStStSqGjmJYPpwBxyxyjWznTXznTChTOrznznhThTjWznznznjWhThThTjWznznjWznjWjmJjizlWtStStStStStStStS
-tStStStStSqGqGBsPpPpjmxyxywIjWwIjWwIjWwIjWwIjWwIjWwIznznznjWznwIjWwIjWwIjWwIjmiQOsfrcAcAtStStStStStS
-tStStStStSqGqGjmwBPpjmxyxyxyxyxyxyVTxyVTxyxyxyxyxyVTxyxyxyxyxyVTxyxyxyxyxyasCADoOsKycAzttStStStStStS
-tStStStSqGqGjmjmPpPpjmjmxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyajyNsttSHROsYfcAcAtStStStStStS
-tStStStSqGqGBswBPpPpwBjmjmjmkXrMjmoPLBjmkXLBjmJrRZngjmxyxyxyjmAXjmjmjmHsHsHslWNlNlNlNltStStStStStStS
-tStStStSqGqGjmPpPpwBPpPpjmjmqQqQjmqQapjmqQMFjmSjsEcTjmPpPpPpjmwBwBOaHsHsHsHsHsHsHsHsHstStStStStStStS
-tStStStSqGqGjmNMPpPpwBPpjmjmmzGljmGlRVjmRVGljmMungJrjmVAPpPpjmjrwBPpjmHsHsHsHsHsHsHsHstStStStStStStS
-tStStStSqGZPBswBPpwBPpjmjmjmjmjmjmjmjmjmjmjmjmjmMujmjmKUKUKUjmjmPpjmjmjmHsHsHsHsHsHsHstStStStStStStS
-XkXkXktSZPqGjmBsjmjmBsjmqGqGqGqGjmjmjmqGqGlCqGjmjmjmdMWIWIWIdMjmBsjmlCqGHsHsHsHsHsHsHstStSXkXkXkXkXk
-XkXkXkXkqGqGqGqGqGqGqGqGqGZqqGqGqGqGqGqGqGqGqGqGqGqGzMWIWIWIWIqGqGqGqGqGwMwMwMwMwMwMwMXkXkXkXkXkXkXk
-XkXkXkqGqGqGlCqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGWIWIWIWIzMqGqGqGqGqGwMwMwMwMwMwMwMXkXkXkXkXkXkXk
-XkXkXkqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGzMWIWIWIWIzMqGqGqGqGqGqGwMwMwMwMwMwMXkXkXkXkXkXkXk
-XkXkXkyUtkqGqGqGqGZqqGqGqGqGqGqGqGqGqGqGqGqGfGzMWIWIWIWIWIWIqGqGqGWIqGqGqGIkwMwMwMwMwMXkXkXkXkXkXkXk
-XkXkXkyUIkyUqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGzMWIWIWIWIWIWIzMqGqGqGqGqGtkyUSeyUwMwMwMwMXkXkXkXkXkXkXk
-XkXkXkyUSeyUyUqGqGqGqGqGqGqGqGqGqGqGZPqGqGqGWIWIWIWIWIWIzMqGqGqGqGqGyUyUyUIkeUwMwMwMwMXkXkXkXkXkXkXk
-XkXkXkXkIkyUiPqGqGqGqGqGqGqGqGqGqGqGqGqGqGzMWIWIzMzMWIzMqGqGqGqGqGqGAwyUyUyUyUwMwMwMwMXkXkXkXkXkXkXk
-XkXkXkXkyUeUyUIkqGqGqGqGqGqGqGZPqGqGqGqGqGzMWIWIWIWIzMfGqGqGqGqGqGyUyUyUiPyUeUwMwMwMwMXkXkXkXkXkXkXk
+tStStStSqGqGqGBsPpPpjmxyxywIjWwIjWwIjWwIjWwIjWwIjWwIznznznjWznwIjWwIjWwIjWwIjmiQOsfrcAcAtStStStStStS
+tStStSqGqGqGqGjmwBPpjmxyxyxyxyxyxyajxyajxyxyxyxyxyajxyxyxyxyxyajxyxyxyxyxyasCADoOsKycAzttStStStStStS
+tStStSqGqGqGjmjmPpPpjmjmxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyIPyNsttSHROsYfcAcAtStStStStStS
+tStStSqGqGqGBswBPpPpwBjmjmjmkXrMjmoPLBjmkXLBjmJrRZngjmxyxyxyjmAXjmjmjmHsHsHslWNlNlNlNltStStStStStStS
+tStStSqGqGqGjmPpPpwBPpPpjmjmqQqQjmqQapjmqQMFjmSjsEcTjmPpPpPpjmwBwBOaHsHsHsHsHsHsHsHsHstStStStStStStS
+tStSqGqGqGqGjmNMPpPpwBPpjmjmmzGljmGlRVjmRVGljmMungJrjmVAPpPpjmjrwBPpjmHsHsHsHsHsHsHsHstStStStStStStS
+tStSqGqGqGZPBswBPpwBPpjmjmjmjmjmjmjmjmjmjmjmjmjmMujmjmKUKUKUjmjmPpjmjmjmHsHsHsHsHsHsHstStStStStStStS
+XkXkqGqGZPqGjmBsjmjmBsjmqGqGqGqGjmjmjmqGqGlCqGjmjmjmdMWIWIWIdMjmBsjmlCqGHsHsHsHsHsHsHstStSXkXkXkXkXk
+XkXkqGqGqGqGqGqGqGqGqGqGqGZqqGqGqGqGqGqGqGqGqGqGqGqGzMWIWIWIWIqGqGqGqGqGwMwMwMwMwMwMwMXkXkXkXkXkXkXk
+XkXkqGqGqGqGlCqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGWIWIWIWIzMqGqGqGqGqGwMwMwMwMwMwMwMXkXkXkXkXkXkXk
+XkXkqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGzMWIWIWIWIzMqGqGqGqGqGqGwMwMwMwMwMwMXkXkXkXkXkXkXk
+XkXkyUyUtkqGqGqGqGZqqGqGqGqGqGqGqGqGqGqGqGqGfGzMWIWIWIWIWIWIqGqGqGWIqGqGqGIkwMwMwMwMwMXkXkXkXkXkXkXk
+XkXkyUyUIkyUqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGzMWIWIWIWIWIWIzMqGqGqGqGqGtkyUSeyUwMwMwMwMXkXkXkXkXkXkXk
+XkXkyUyUSeyUyUqGqGqGqGqGqGqGqGqGqGqGZPqGqGqGWIWIWIWIWIWIzMqGqGqGqGqGyUyUyUIkeUwMwMwMwMXkXkXkXkXkXkXk
+XkXkyUyUIkyUiPqGqGqGqGqGqGqGqGqGqGqGqGqGqGzMWIWIzMzMWIzMqGqGqGqGqGqGAwyUyUyUyUwMwMwMwMXkXkXkXkXkXkXk
+XkXkXkyUyUeUyUIkqGqGqGqGqGqGqGZPqGqGqGqGqGzMWIWIWIWIzMfGqGqGqGqGqGyUyUyUiPyUeUwMwMwMwMXkXkXkXkXkXkXk
 XkXkXkXkwMwMtkBbqGqGqGqGqGqGqGqGqGlCqGwMwMWIWIWIWIWIWIwMwMqGqGqGqGqGyUtkyUTwwMwMwMwMwMXkXkXkXkXkXkXk
 XkXkXkXkwMwMwMAwqGqGqGqGqGqGqGwMwMwMwMwMwMWIWIWIWIWIwMwMwMwMwMqGqGqGBbyUwMwMwMwMwMwMwMXkXkXkXkXkXkXk
 XkXkXkXkwMwMwMwMwMqGqGqGqGwMwMwMwMwMwMwMwMwMWIWIWIWIWIwMwMwMwMwMwMeUIkwMwMwMwMwMwMwMwMXkXkXkXkXkXkXk
