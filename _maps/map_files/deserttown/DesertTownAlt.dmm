@@ -1,4 +1,4 @@
-"aj" = (/obj/machinery/light/rogue/wallfire/candle,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp/exterior)
+"aj" = (/obj/machinery/light/rogue/wallfire/candle/floorcandle,/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
 "ao" = (/obj/effect/decal/cobbleedge{dir = 1; icon_state = "borderfall"; pixel_y = 8},/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/dunes,/area/rogue/outdoors/banditcamp/exterior)
 "ap" = (/obj/structure/fluff/nest,/turf/open/floor/rogue/hay,/area/rogue/outdoors/banditcamp)
 "as" = (/obj/item/natural/rock,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp/exterior)
@@ -6,6 +6,7 @@
 "aQ" = (/obj/item/cushion/zybantine,/obj/effect/landmark/start/bandit,/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
 "aV" = (/obj/item/reagent_containers/powder/salt,/obj/item/reagent_containers/powder/salt,/obj/item/reagent_containers/powder/salt,/obj/structure/closet/crate/chest{lockid = "bandit"},/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/turf/open/floor/rogue/tile{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
 "aW" = (/obj/structure/flora/roguegrass,/obj/item/reagent_containers/glass/bucket,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp/exterior)
+"bh" = (/obj/machinery/light/rogue/wallfire/candle/floorcandle/alt,/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
 "br" = (/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp/exterior)
 "ca" = (/obj/structure/mineral_door/wood/deadbolt{dir = 1},/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
 "cb" = (/obj/structure/far_travel,/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/desertdeep/safe)
@@ -38,7 +39,7 @@
 "iQ" = (/obj/structure/table/wood{icon_state = "tablewood1"},/obj/structure/fluff/walldeco/med6{pixel_x = -32},/obj/item/reagent_containers/glass/bottle/rogue/healthpot,/turf/open/floor/rogue/twig,/area/rogue/outdoors/banditcamp)
 "je" = (/obj/effect/decal/carpet,/turf/open/floor/rogue/tile{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
 "jf" = (/obj/structure/bed/rogue/inn/wool,/obj/item/bedsheet/rogue/cloth,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
-"jl" = (/obj/machinery/light/rogue/hearth{pixel_y = 10},/obj/machinery/light/rogue/oven/south,/obj/item/reagent_containers/glass/bucket/pot,/obj/structure/fluff/railing/border,/turf/open/floor/rogue/concrete,/area/rogue/outdoors/banditcamp)
+"jl" = (/obj/machinery/light/rogue/hearth{pixel_y = 10},/obj/machinery/light/rogue/oven/south,/obj/structure/fluff/railing/border,/obj/item/reagent_containers/glass/bucket/pot/aalloy,/turf/open/floor/rogue/concrete,/area/rogue/outdoors/banditcamp)
 "jm" = (/turf/closed/wall/mineral/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
 "jr" = (/obj/structure/winch{name = "Abandoned Fort"; redstone_id = "bandit"; gid = "bandit"},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
 "jw" = (/obj/item/cushion/desert1,/obj/effect/landmark/start/bandit{dir = 8},/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
@@ -67,8 +68,9 @@
 "qG" = (/turf/open/floor/rogue/dunes,/area/rogue/outdoors/desertdeep/safe)
 "qL" = (/obj/structure/table/wood{dir = 1; icon_state = "longtable"},/obj/item/roguecoin/silver/pile,/obj/item/roguecoin/gold/pile,/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
 "qQ" = (/turf/open/floor/rogue/hay,/area/rogue/outdoors/banditcamp)
+"rk" = (/obj/item/natural/rock,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
 "ro" = (/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp/exterior)
-"ru" = (/obj/structure/fluff/grindwheel,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
+"ru" = (/obj/machinery/light/rogue/wallfire/candle,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp/exterior)
 "rM" = (/obj/structure/mineral_door/swing_door,/obj/structure/fluff/nest{pixel_x = -5; pixel_y = 5},/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
 "sa" = (/obj/structure/closet/crate/roguecloset/dark,/obj/item/flashlight/flare/torch/metal,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
 "sf" = (/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/banditcamp/hoardmaster)
@@ -85,7 +87,7 @@
 "uv" = (/turf/closed/wall/mineral/rogue/sandstone,/area/rogue/indoors/banditcamp/hoardmaster)
 "uQ" = (/obj/structure/rack/rogue,/obj/item/clothing/mask/rogue/ragmask/red,/obj/item/clothing/mask/rogue/ragmask/red,/obj/item/clothing/mask/rogue/ragmask/black,/obj/item/clothing/mask/rogue/ragmask/black,/obj/item/clothing/cloak/raincloak/purple,/obj/item/clothing/cloak/raincloak/purple,/obj/item/clothing/cloak/raincloak/drab,/obj/item/clothing/cloak/raincloak/drab,/obj/item/clothing/cloak/raincloak/drab,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
 "vq" = (/obj/structure/mineral_door/bars{locked = 1; lockid = "bandit"},/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
-"vQ" = (/obj/structure/roguemachine/Hoardmaster{pixel_x = -32},/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
+"vQ" = (/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp/exterior)
 "wz" = (/turf/closed/wall/mineral/rogue/sandstone,/area/rogue/outdoors/banditcamp)
 "wB" = (/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
 "wI" = (/turf/closed/wall/mineral/rogue/sandbrick,/area/rogue/outdoors/banditcamp/exterior)
@@ -116,10 +118,12 @@
 "AO" = (/obj/structure/table/wood{dir = 5; icon_state = "largetable"},/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
 "AX" = (/obj/structure/mineral_door/wood/deadbolt{dir = 1},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
 "Bb" = (/obj/item/grown/log/tree,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/desertdeep/safe)
+"Bn" = (/obj/machinery/light/rogue/firebowl/standing,/obj/structure/fluff/statue/knight/r{icon = 'modular/DesertTown/icons/alt/tallstructure.dmi'},/obj/item/cushion/desert1,/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
 "Bo" = (/obj/effect/decal/cobbleedge{dir = 1; icon_state = "borderfall"; pixel_y = 8},/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp/exterior)
 "Bs" = (/turf/closed/wall/mineral/rogue/wooddark/window,/area/rogue/outdoors/banditcamp)
 "Bz" = (/obj/structure/fermentation_keg/sandpot/random/water,/turf/open/floor/rogue/tile{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
 "BD" = (/obj/item/cushion/desert2,/obj/effect/landmark/start/bandit{dir = 4},/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
+"BK" = (/obj/structure/fluff/grindwheel,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
 "BL" = (/obj/structure/bed/rogue/inn/wool,/obj/item/bedsheet/rogue/wool,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
 "Ci" = (/obj/structure/closet/crate/chest{lockid = "bandit"},/obj/item/rope/chain,/obj/item/rope/chain,/obj/item/rope/chain,/obj/item/rope/chain,/obj/item/rope/chain,/obj/item/rope/chain,/obj/item/clothing/neck/roguetown/cursed_collar,/obj/item/clothing/neck/roguetown/cursed_collar,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
 "Ct" = (/obj/item/roguebin/water,/obj/structure/fluff/wallclock,/turf/open/floor/rogue/twig,/area/rogue/outdoors/banditcamp)
@@ -136,23 +140,26 @@
 "FE" = (/obj/item/cushion/zybantine,/turf/open/floor/carpet/purple,/area/rogue/outdoors/banditcamp)
 "FM" = (/obj/item/roguecoin/gold/pile,/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
 "FW" = (/obj/item/rogueweapon/pick,/turf/open/floor/rogue/sandbrick,/area/rogue/outdoors/banditcamp)
-"FY" = (/obj/machinery/light/rogue/firebowl/standing,/obj/structure/fluff/statue/knight{icon = 'modular/DesertTown/icons/alt/tallstructure.dmi'},/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
+"FY" = (/obj/machinery/light/rogue/firebowl/standing,/obj/structure/fluff/statue/knight{icon = 'modular/DesertTown/icons/alt/tallstructure.dmi'},/obj/item/cushion/desert1,/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
 "Gk" = (/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/desertdeep/safe)
 "Gl" = (/obj/item/roguebin,/turf/open/floor/rogue/hay,/area/rogue/outdoors/banditcamp)
 "Gr" = (/obj/structure/rack/rogue,/obj/item/clothing/head/roguetown/helmet/leather/volfhelm,/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
+"Gy" = (/obj/structure/flora/roguetree/palm{pixel_x = -22; pixel_y = 3},/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp/exterior)
 "GA" = (/obj/item/roguegem/diamond,/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/banditcamp)
-"GM" = (/obj/machinery/light/rogue/firebowl/standing,/obj/structure/fluff/statue/knight/r{icon = 'modular/DesertTown/icons/alt/tallstructure.dmi'},/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
+"GM" = (/obj/item/cushion/desert1,/turf/open/floor/rogue/carpet,/area/rogue/outdoors/banditcamp)
 "Hs" = (/turf/closed/mineral/rogue,/area/rogue/outdoors/banditcamp)
 "Hw" = (/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
 "HD" = (/turf/closed/mineral/random/rogue,/area/rogue/outdoors/banditcamp)
+"HF" = (/obj/structure/roguemachine/Hoardmaster{pixel_x = -32; plane = -3},/obj/item/cushion/zybantine{pixel_x = -18; pixel_y = 3},/obj/item/cushion/zybantine{pixel_x = 15; pixel_y = 2},/obj/item/cushion/zybantine{pixel_x = 0; pixel_y = -1},/obj/effect/decal/carpet{pixel_x = 0; pixel_y = 2},/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
 "HM" = (/obj/structure/bars{icon_state = "barsbent"; layer = 2.81},/turf/closed/wall/mineral/rogue/wooddark/window,/area/rogue/outdoors/banditcamp)
 "HR" = (/obj/structure/closet/crate/chest/old_crate,/obj/item/reagent_containers/powder/ozium,/obj/structure/fluff/walldeco/med{pixel_x = -32},/turf/open/floor/rogue/twig,/area/rogue/outdoors/banditcamp)
 "Ic" = (/obj/structure/mineral_door/wood/deadbolt{dir = 8},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
 "Ik" = (/obj/structure/flora/roguegrass,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/desertdeep/safe)
 "IB" = (/obj/structure/arcyne_wall{desc = "A wall of pure arcyne force. Powerful covetous magic protects the dragon's hoard."; max_integrity = 9999; name = "Wall of Greed"},/turf/open/floor/rogue/tile/harem,/area/rogue/outdoors/banditcamp)
 "IK" = (/obj/structure/closet/crate/chest/gold,/obj/item/dildo/silver,/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
-"IP" = (/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp/exterior)
+"IP" = (/obj/structure/rack/rogue,/obj/item/cooking/platter/aalloy,/obj/item/cooking/platter/aalloy,/obj/item/cooking/platter/aalloy,/obj/item/cooking/platter/aalloy,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
 "Jj" = (/turf/closed/wall/mineral/rogue/tent,/area/rogue/outdoors/banditcamp)
+"Jm" = (/obj/structure/flora/ausbushes/ppflowers,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/desertdeep/safe)
 "Jo" = (/obj/structure/table/wood{icon_state = "longtable"},/obj/item/roguegem/amethyst,/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
 "Jr" = (/obj/structure/flora/roguegrass,/turf/open/floor/rogue/dirt/road/desert,/area/rogue/outdoors/banditcamp)
 "Jv" = (/obj/structure/table/wood{icon_state = "tablewood1"},/turf/open/floor/rogue/tile{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp)
@@ -206,7 +213,7 @@
 "Sj" = (/obj/structure/fluff/nest,/turf/open/floor/rogue/dirt/road/desert,/area/rogue/outdoors/banditcamp)
 "SP" = (/obj/structure/stairs/desert{dir = 8},/turf/open/floor/rogue/dunes,/area/rogue/outdoors/banditcamp/exterior)
 "Tw" = (/obj/structure/flora/roguegrass,/obj/structure/flora/roguegrass/bush/desertshrub,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/desertdeep/safe)
-"TC" = (/obj/item/natural/rock,/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/banditcamp/exterior)
+"TC" = (/obj/structure/flora/roguegrass,/obj/structure/flora/ausbushes/ppflowers,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp/exterior)
 "TP" = (/obj/effect/decal/cobbleedge{dir = 1; icon_state = "borderfall"; pixel_y = 8},/turf/open/floor/rogue/dunes,/area/rogue/outdoors/banditcamp/exterior)
 "TQ" = (/obj/item/roguegem/blue,/obj/item/roguecoin/gold/pile,/turf/open/floor/rogue/tile/harem2,/area/rogue/indoors/banditcamp/hoardmaster)
 "TX" = (/obj/structure/roguemachine/bounty{color = "#ffc4c2"},/turf/open/floor/rogue/concrete{icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'},/area/rogue/outdoors/banditcamp/exterior)
@@ -220,7 +227,7 @@
 "VA" = (/obj/structure/gate/bars/preopen{gid = "bandit"; name = "Abandoned Fort"; redstone_id = "bandit"},/turf/open/floor/rogue/darkpath,/area/rogue/outdoors/banditcamp)
 "VN" = (/obj/structure/bed/rogue/inn/wool,/obj/item/bedsheet/rogue/cloth,/turf/open/floor/rogue/twig,/area/rogue/outdoors/banditcamp)
 "VQ" = (/obj/structure/flora/roguegrass,/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp/exterior)
-"VT" = (/obj/structure/flora/roguetree/palm{pixel_x = -22; pixel_y = 3},/turf/open/floor/rogue/desert_grass,/area/rogue/outdoors/banditcamp/exterior)
+"VT" = (/obj/structure/rack/rogue,/obj/item/cooking/pan/aalloy,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
 "WI" = (/turf/open/floor/rogue/lightpath,/area/rogue/outdoors/desertdeep/safe)
 "Xk" = (/turf/closed/mineral/rogue/bedrock,/area/rogue/outdoors/desertdeep/safe)
 "XN" = (/obj/machinery/gear_painter,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/outdoors/banditcamp)
@@ -247,17 +254,17 @@ tStStStSySySySySySySySySySySySySySySySySySySySySySyvyvyvyvunOaPpyvyvySsfsfuvKYJo
 tStStStSySySySySySySySySySyvyvyvyvyvyvyvySySySySySyvsakDjmACPpjfyvyvySsfsfsfFMOEMGTQNXsfsfxNtStStStS
 tStStStSySySySySySySySyvyvyvyvyvyvyvyvyvyvySySySySjmPpPpjmjmAXjmjmyvyvtSsfsfJWFMFMMGFMoAsfxNtStStStS
 tStStStStSySySySySyvyvyvyvyvyvHDHDHDyvyvyvyvjmjmjmjmBLwBIcPpPpjmjmjmjmtSsfuvwzIBIBIBwzwzxNxNtStStStS
-tStStStStSySySySySyvyvyvyvyvHDHDFWHDHDyvyvyvjmPbPbjmjmjmjmPpPpjmzdunjmjmjmjmFYPFvQPFGMwzxNxNtStStStS
-tStStStStStSySySySjmjmjmjmjmHDUmPpjmjmjmjmjmjmQSDKcqDKHwjmPpPpVxPpPpjmVePpjmPFDzDzDzPFwzxNtStStStStS
-tStStStStStSySySySjmlFOaPpgKPpPpUdPpgKwBeaMljmEqDKDKDKHwjmPpPpjmPpACjmVePpjmfEDzDzDzGrwztStStStStStS
+tStStStStSySySySySyvyvyvyvyvHDHDFWHDHDyvyvyvjmPbPbjmjmjmjmPpPpjmzdunjmjmjmjmFYbhHFajBnwzxNxNtStStStS
+tStStStStStSySySySjmjmjmjmjmHDUmPpjmjmjmjmjmjmQSDKcqDKIPjmPpPpVxPpPpjmVePpjmPFGMDzGMPFwzxNtStStStStS
+tStStStStStSySySySjmlFOaPpgKPpPpUdPpgKwBeaMljmEqDKDKDKVTjmPpPpjmPpACjmVePpjmfEGMDzGMGrwztStStStStStS
 tStStStStStSySySySjmPpPpPpvqPpPpPpPpvqPpczPpjmjmjmjmofjmjmjmUDjmjmjmjmjmJEjmMoDzDzDzzkwztStStStStStS
 tStStStStStStStStSjmMlczPpgKPpPpwBPpgKPpwBlFjmjljGExQBRkPpPpPpOaPpPpPpeaPpjmwzwzlLwzwzwztStStStStStS
 tStStStStStStStStSjmjmHMjmjmMjPpPpCijmjmHMjmjmQBQBQBQBQBPpNGaQLzaQigNGPpxzjmPpPpPpfdwztStStStStStStS
-tStStStStStStStStSgJjmxyIPwIHMAXAXHMjmYzVTUJjmaVQBjeQBJvwBBDYWYVAzAOjwPpwBmnPpPpPpruwztStStStStStStS
+tStStStStStStStStSgJjmxyvQwIHMAXAXHMjmYzGyUJjmaVQBjeQBJvwBBDYWYVAzAOjwPpwBmnPpPpPpBKwztStStStStStStS
 tStStStStStStStStSgJjmxyxywIhTznznznroVQUJUJjmqjQBQBBzJvPpgklZmWmWkizbPpPpmnPpPpPpXNwztStStStStStStS
 tStStStStStStStSPLqewBxyyNznznznznMMroUJUJUJjmjmaKxvjmjmPpNGBDFEEocXNGwBEFjmwzhowzwzwztStStStStStStS
 tStStStStStStStSwBwBjmasxywIznznzndbVQUJUJUJUJUJUJUJbrjmPpPpPpwBPpPpPpPpzWjmQxQBQBcGjmtStStStStStStS
-tStStStStStStStSUgwBjmxyxywIMmKWznznsZVQUJUJUJUJUJsZVQZLlylyOJOJOJOJsFlyOJjmHwQBQBNIjmtStStStStStStS
+tStStStStStStStSUgwBjmxyxywIMmKWznznsZVQUJUJUJUJUJsZTCZLlylyOJOJOJOJsFlyOJjmHwQBQBNIjmtStStStStStStS
 tStStStStStStStSwBPpjmxyxywItNJPznznznroMMYzroaWMMdbroYyPpwBPpPpPpwBPpPpPpOgQBQBQBuQjmtStStStStStStS
 tStStStStStStStSkZwBjmxyxywIKLZnznjWznznpZrorohTVQpZhTjmPhwBwBwBPpPpPpPpwBjmjmjmjmjmjmtStStStStStStS
 tStStStSwBwBtSjmPpwBwBxyEnwIznznxyxyxyznhThTznznznznznjmjmjmjmAXcajmjmjmjmjmtStStStStStStStStStStStS
@@ -265,12 +272,12 @@ tStStStSugwBAFisPpPpjmxyxyjWznznxyZrxyhThThTznjWznznznznznsVjWjWjWjWSPznjWjWlWJj
 tStStStSwBwBtSjmwBPpjmxyxywIznznxyxyxyhThThThTgRhTjWznznznxXxbxbxbxbgvznznjWzfCtOsVNFotStStStStStStS
 tStStStStStStSjmPpwBjmxyxyjWznznznhThThThThThThThThTznznznBoaoTPTPaoBoznznznizOsOsJXtStStStStStStStS
 tStStStStStSqGjmPpPpjmxyxywIznznznhThThTznznhThTjWznznznjWhThThTjWznznjWznjWzfOsOsVNKvtStStStStStStS
-tStStStStStSqGjmJYPpwBxyxyjWznTXznTChTOrznznhThTjWznznznjWhThThTjWznznjWznjWjmJjizlWtStStStStStStStS
+tStStStStStSqGjmJYPpwBxyxyjWznTXznznhTOrznznhThTjWznznznjWhThThTjWznznjWznjWjmJjizlWtStStStStStStStS
 tStStStSqGqGqGBsPpPpjmxyxywIjWwIjWwIjWwIjWwIjWwIjWwIznznznjWznwIjWwIjWwIjWwIjmiQOsfrcAcAtStStStStStS
-tStStSqGqGqGqGjmwBPpjmxyxyxyxyxyxyajxyajxyxyxyxyxyajxyxyxyxyxyajxyxyxyxyxyasCADoOsKycAzttStStStStStS
-tStStSqGqGqGjmjmPpPpjmjmxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyIPyNsttSHROsYfcAcAtStStStStStS
+tStStSqGqGqGqGjmwBPpjmxyxyxyxyxyxyruxyruxyxyxyxyxyruxyxyxyxyxyruxyxyxyxyxyasCADoOsKycAzttStStStStStS
+tStStSqGqGqGjmjmPpPpjmjmxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyvQyNsttSHROsYfcAcAtStStStStStS
 tStStSqGqGqGBswBPpPpwBjmjmjmkXrMjmoPLBjmkXLBjmJrRZngjmxyxyxyjmAXjmjmjmHsHsHslWNlNlNlNltStStStStStStS
-tStStSqGqGqGjmPpPpwBPpPpjmjmqQqQjmqQapjmqQMFjmSjsEcTjmPpPpPpjmwBwBOaHsHsHsHsHsHsHsHsHstStStStStStStS
+tStStSqGqGqGjmPpPpwBPprkjmjmqQqQjmqQapjmqQMFjmSjsEcTjmPpPpPpjmwBwBOaHsHsHsHsHsHsHsHsHstStStStStStStS
 tStSqGqGqGqGjmNMPpPpwBPpjmjmmzGljmGlRVjmRVGljmMungJrjmVAPpPpjmjrwBPpjmHsHsHsHsHsHsHsHstStStStStStStS
 tStSqGqGqGZPBswBPpwBPpjmjmjmjmjmjmjmjmjmjmjmjmjmMujmjmKUKUKUjmjmPpjmjmjmHsHsHsHsHsHsHstStStStStStStS
 XkXkqGqGZPqGjmBsjmjmBsjmqGqGqGqGjmjmjmqGqGlCqGjmjmjmdMWIWIWIdMjmBsjmlCqGHsHsHsHsHsHsHstStSXkXkXkXkXk
@@ -280,10 +287,10 @@ XkXkqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGzMWIWIWIWIzMqGqGqGqGqGqGwMwMwM
 XkXkyUyUtkqGqGqGqGZqqGqGqGqGqGqGqGqGqGqGqGqGfGzMWIWIWIWIWIWIqGqGqGWIqGqGqGIkwMwMwMwMwMXkXkXkXkXkXkXk
 XkXkyUyUIkyUqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGqGzMWIWIWIWIWIWIzMqGqGqGqGqGtkyUSeyUwMwMwMwMXkXkXkXkXkXkXk
 XkXkyUyUSeyUyUqGqGqGqGqGqGqGqGqGqGqGZPqGqGqGWIWIWIWIWIWIzMqGqGqGqGqGyUyUyUIkeUwMwMwMwMXkXkXkXkXkXkXk
-XkXkyUyUIkyUiPqGqGqGqGqGqGqGqGqGqGqGqGqGqGzMWIWIzMzMWIzMqGqGqGqGqGqGAwyUyUyUyUwMwMwMwMXkXkXkXkXkXkXk
+XkXkyUyUIkyUiPqGqGqGqGqGqGqGqGqGqGqGqGqGqGzMWIWIzMzMWIzMqGqGqGqGqGqGAwyUyUyUJmwMwMwMwMXkXkXkXkXkXkXk
 XkXkXkyUyUeUyUIkqGqGqGqGqGqGqGZPqGqGqGqGqGzMWIWIWIWIzMfGqGqGqGqGqGyUyUyUiPyUeUwMwMwMwMXkXkXkXkXkXkXk
 XkXkXkXkwMwMtkBbqGqGqGqGqGqGqGqGqGlCqGwMwMWIWIWIWIWIWIwMwMqGqGqGqGqGyUtkyUTwwMwMwMwMwMXkXkXkXkXkXkXk
-XkXkXkXkwMwMwMAwqGqGqGqGqGqGqGwMwMwMwMwMwMWIWIWIWIWIwMwMwMwMwMqGqGqGBbyUwMwMwMwMwMwMwMXkXkXkXkXkXkXk
+XkXkXkXkwMwMwMAwqGqGqGqGqGqGqGwMwMwMwMwMwMWIWIWIWIWIwMwMwMwMwMqGqGqGBbJmwMwMwMwMwMwMwMXkXkXkXkXkXkXk
 XkXkXkXkwMwMwMwMwMqGqGqGqGwMwMwMwMwMwMwMwMwMWIWIWIWIWIwMwMwMwMwMwMeUIkwMwMwMwMwMwMwMwMXkXkXkXkXkXkXk
 XkXkXkXkwMwMwMwMwMWIwMwMwMwMwMwMwMwMwMwMwMwMwMWIWIWIWIWIwMwMwMwMwMwMwMwMwMwMwMwMwMwMwMXkXkXkXkXkXkXk
 XkXkXkXkwMwMwMwMwMWIWIwMwMwMwMwMwMwMwMwMwMwMwMwMWIWIWIWIfkwMwMwMwMwMwMwMwMwMwMwMwMwMwMXkXkXkXkXkXkXk
