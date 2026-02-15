@@ -1036,6 +1036,10 @@
 /obj/structure/roguewindow/openclose/reinforced{
 	dir = 4
 	},
+/obj/structure/curtain/directional/blue{
+	color = "#415e96";
+	dir = 4
+	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/deserttown/magician)
 "aFx" = (
@@ -3716,6 +3720,13 @@
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/deserttown/magician)
+"cfe" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/deserttown/manor/roofs)
 "cfk" = (
 /obj/structure/fermentation_keg/sandpot,
 /obj/machinery/light/rogue/wallfire/candle/l,
@@ -4004,9 +4015,13 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/church)
 "cnc" = (
-/obj/machinery/light/rogue/torchholder/c,
-/turf/open/floor/rogue/wood,
-/area/rogue/outdoors/deserttown/manor/roofs)
+/obj/structure/roguewindow/harem3,
+/obj/structure/curtain/directional/blue{
+	color = "#415e96";
+	dir = 4
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors/deserttown/magician)
 "cnt" = (
 /obj/structure/fluff/railing/fence{
 	dir = 1
@@ -4307,6 +4322,9 @@
 /area/rogue/outdoors/deserttown/manor/roofs)
 "cwy" = (
 /obj/structure/roguewindow/openclose/reinforced{
+	dir = 4
+	},
+/obj/structure/curtain/directional/purple{
 	dir = 4
 	},
 /turf/open/floor/rogue/tile/harem2{
@@ -4644,8 +4662,14 @@
 /turf/open/floor/rogue/tile/harem1,
 /area/rogue/under/town/basement)
 "cFV" = (
-/turf/closed/mineral/rogue,
-/area/rogue/outdoors/deserttown)
+/obj/structure/fluff/railing/border{
+	dir = 1
+	},
+/obj/structure/curtain/blue{
+	color = "#415e96"
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/deserttown/manor/roofs)
 "cGi" = (
 /turf/open/water/river{
 	dir = 4;
@@ -5140,6 +5164,9 @@
 /area/rogue/indoors/town/church)
 "cYH" = (
 /obj/structure/roguewindow/openclose/reinforced{
+	dir = 1
+	},
+/obj/structure/curtain/directional/purple{
 	dir = 1
 	},
 /turf/open/floor/rogue/wood,
@@ -7424,6 +7451,15 @@
 /obj/effect/spawner/lootdrop/valuable_candle_spawner,
 /turf/open/floor/rogue/darkpath,
 /area/rogue/under/town/basement)
+"ehK" = (
+/obj/structure/roguewindow/openclose/reinforced{
+	dir = 8
+	},
+/obj/structure/curtain/directional/purple{
+	dir = 8
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/deserttown/manor)
 "ehL" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /obj/item/roguebin/water,
@@ -11224,6 +11260,22 @@
 	icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'
 	},
 /area/rogue/indoors/deserttown)
+"gjk" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/item/cooking/platter,
+/obj/item/cooking/platter,
+/obj/item/cooking/platter,
+/obj/item/cooking/platter,
+/obj/item/cooking/platter,
+/obj/item/cooking/platter,
+/obj/machinery/light/rogue/wallfire/desert{
+	pixel_x = -32;
+	pixel_y = 17
+	},
+/turf/open/floor/rogue/tile/harem,
+/area/rogue/indoors/deserttown/manor)
 "gjt" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/carpet/royalblack,
@@ -11575,6 +11627,15 @@
 /obj/structure/fluff/walldeco/chains,
 /turf/open/floor/rogue/citybrick/citybrick6,
 /area/rogue/indoors/inq/basement)
+"gto" = (
+/obj/structure/curtain/directional/red{
+	dir = 4
+	},
+/obj/structure/roguewindow/harem3,
+/turf/open/floor/rogue/concrete{
+	icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'
+	},
+/area/rogue/indoors/deserttown/manor)
 "gts" = (
 /obj/machinery/light/rogue/firebowl,
 /turf/open/floor/rogue/wood,
@@ -14237,6 +14298,10 @@
 /obj/structure/roguewindow/openclose/reinforced{
 	dir = 1
 	},
+/obj/structure/curtain/directional/blue{
+	color = "#415e96";
+	dir = 1
+	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/deserttown/magician)
 "ibq" = (
@@ -14485,6 +14550,7 @@
 /obj/item/clothing/neck/roguetown/cursed_collar,
 /obj/item/leash/chain,
 /obj/structure/rack/rogue/shelf/biggest,
+/obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/floor/rogue/churchbrick,
 /area/rogue/outdoors/exposed/bath/vault)
 "ijB" = (
@@ -15519,7 +15585,8 @@
 /area/rogue/indoors/deserttown/magician)
 "iPq" = (
 /obj/machinery/light/rogue/wallfire/desert{
-	pixel_x = -32
+	pixel_x = -32;
+	pixel_y = 19
 	},
 /turf/open/floor/rogue/tile/harem,
 /area/rogue/indoors/deserttown/manor)
@@ -20540,6 +20607,9 @@
 /obj/structure/roguewindow/openclose/reinforced{
 	dir = 1
 	},
+/obj/structure/curtain/directional/red{
+	dir = 1
+	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/deserttown/manor)
 "lJn" = (
@@ -22881,6 +22951,10 @@
 /area/rogue/under/town/basement)
 "ngo" = (
 /obj/structure/roguewindow/harem3,
+/obj/structure/curtain/directional/blue{
+	color = "#415e96";
+	dir = 1
+	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/deserttown/magician)
 "ngw" = (
@@ -24543,6 +24617,13 @@
 /obj/structure/table/wood,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/deserttown/bath)
+"odO" = (
+/obj/machinery/light/rogue/wallfire/desert{
+	pixel_x = -32;
+	pixel_y = 17
+	},
+/turf/open/floor/rogue/tile/harem,
+/area/rogue/indoors/deserttown/manor)
 "odU" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "borderfall";
@@ -26346,6 +26427,9 @@
 /area/rogue/indoors/deserttown/warden)
 "pcc" = (
 /obj/structure/roguewindow/openclose/reinforced{
+	dir = 1
+	},
+/obj/structure/curtain/directional/purple{
 	dir = 1
 	},
 /turf/open/floor/rogue/tile/harem2{
@@ -29605,6 +29689,13 @@
 /obj/machinery/light/rogue/firebowl/standing,
 /turf/open/floor/rogue/citybrick/citybrick1,
 /area/rogue/outdoors/desert)
+"qPq" = (
+/obj/structure/roguewindow/harem3,
+/obj/structure/curtain/directional/red{
+	dir = 8
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/deserttown/manor)
 "qPu" = (
 /obj/structure/stairs,
 /turf/open/floor/rogue/citybrick/citybrick1,
@@ -30164,6 +30255,13 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/deserttown/magician)
+"reS" = (
+/obj/structure/curtain/directional/red{
+	dir = 1
+	},
+/obj/structure/roguewindow/harem3,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/deserttown/manor)
 "reT" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "borderfall";
@@ -37749,6 +37847,13 @@
 /mob/living/carbon/human/species/dwarfskeleton/ambush,
 /turf/open/floor/rogue/tile/harem1,
 /area/rogue/under/town/basement)
+"vrl" = (
+/obj/structure/roguewindow/harem3,
+/obj/structure/curtain/directional/red{
+	dir = 1
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/deserttown/manor)
 "vrr" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -343264,10 +343369,10 @@ qDj
 qDj
 qDj
 qDj
+gto
 qDj
 qDj
-qDj
-qDj
+gto
 qDj
 qDj
 qDj
@@ -343568,11 +343673,11 @@ nsu
 iPq
 nsu
 nsu
+odO
 nsu
-iPq
 nsu
 nsu
-rHd
+gjk
 qDj
 qLV
 tEj
@@ -463457,8 +463562,8 @@ aSc
 aSc
 aSc
 aSc
-cFV
-cFV
+eUX
+eUX
 gpu
 gpu
 gpu
@@ -463759,8 +463864,8 @@ gsD
 gsD
 gsD
 dbH
-cFV
-cFV
+eUX
+eUX
 gpu
 gpu
 gpu
@@ -469207,7 +469312,7 @@ qDj
 qDj
 qDj
 qDj
-tgm
+ehK
 qDj
 qDj
 qDj
@@ -473432,11 +473537,11 @@ qDj
 qDj
 vNI
 vNI
-ngo
+cnc
 vNI
 vNI
 vNI
-ngo
+cnc
 vNI
 aFu
 vNI
@@ -476758,7 +476863,7 @@ qxB
 cwV
 mss
 qDj
-vhV
+cfe
 dVh
 gpu
 gpu
@@ -477059,7 +477164,7 @@ jEt
 dvL
 dvL
 dvL
-qDj
+vrl
 aek
 aVN
 gpu
@@ -477361,7 +477466,7 @@ sco
 sco
 sco
 sco
-cYH
+reS
 njm
 aVN
 gpu
@@ -477965,8 +478070,8 @@ njv
 gbU
 gbU
 gbU
-qDj
-cnc
+reS
+njm
 aVN
 gpu
 gpu
@@ -588805,7 +588910,7 @@ sco
 sco
 fZy
 fZy
-fgW
+vrl
 gpu
 gpu
 gpu
@@ -590011,7 +590116,7 @@ qDj
 qDj
 qDj
 qDj
-fgW
+qPq
 qDj
 qDj
 gpu
@@ -592419,7 +592524,7 @@ fsl
 cws
 rfi
 nIm
-aVN
+cFV
 gpu
 gpu
 gpu
@@ -594239,7 +594344,7 @@ vNI
 vNI
 vNI
 vNI
-ngo
+cnc
 vNI
 vNI
 gpu
