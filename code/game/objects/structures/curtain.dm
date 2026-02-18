@@ -119,6 +119,13 @@
 
 /obj/structure/curtain/drab
 	color = "#a68250"
+/obj/structure/curtain/orange
+	color = "#a3622c"
+
+/obj/structure/curtain/yellow
+	color = "#a18727"
+
+
 //This is awful and I apologise.
 /obj/structure/curtain/directional/red
 	color = "#a32121"
@@ -140,3 +147,9 @@
 
 /obj/structure/curtain/directional/black
 	color = "#414143"
+
+/obj/structure/curtain/directional/orange
+	color = "#a3622c"
+
+/obj/structure/curtain/directional/yellow
+	color = "#a18727"
