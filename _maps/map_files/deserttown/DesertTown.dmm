@@ -1793,7 +1793,7 @@
 	dir = 8;
 	lockdiff = 1;
 	locked = 1;
-	lockid = inquisition;
+	lockid = "inquisition";
 	name = "Church Dungeon"
 	},
 /turf/open/floor/rogue/blocks/stonered,
@@ -4385,7 +4385,7 @@
 "ctP" = (
 /obj/structure/mineral_door/bars{
 	locked = 1;
-	lockid = inquisition;
+	lockid = "inquisition";
 	name = "Holding Cell"
 	},
 /turf/open/floor/rogue/blocks/stonered/tiny,
@@ -8438,7 +8438,7 @@
 /obj/structure/mineral_door/wood/donjon{
 	dir = 4;
 	locked = 1;
-	lockid = inquisition;
+	lockid = "inquisition";
 	name = "Interoggation Room"
 	},
 /turf/open/floor/rogue/darkpath,
@@ -9054,7 +9054,7 @@
 /obj/structure/mineral_door/wood/donjon{
 	dir = 1;
 	locked = 1;
-	lockid = inquisition;
+	lockid = "inquisition";
 	name = "Interoggation Room"
 	},
 /obj/effect/decal/cleanable/blood/tracks{
@@ -12561,7 +12561,7 @@
 "gIK" = (
 /obj/structure/mineral_door/bars{
 	locked = 1;
-	lockid = inquisition;
+	lockid = "inquisition";
 	name = "Holding Cell"
 	},
 /turf/open/floor/rogue/citybrick/citybrick2,
@@ -16081,7 +16081,7 @@
 "iMt" = (
 /obj/structure/closet/crate/roguecloset{
 	keylock = 1;
-	lockid = inquisition
+	lockid = "inquisition"
 	},
 /obj/item/rope/chain,
 /obj/item/rope/chain,
@@ -19127,7 +19127,7 @@
 "kqB" = (
 /obj/structure/mineral_door/wood/donjon{
 	dir = 8;
-	lockid = inquisition;
+	lockid = "inquisition";
 	locked = 1;
 	name = "storage"
 	},
@@ -21566,7 +21566,7 @@
 "lJT" = (
 /obj/structure/mineral_door/wood/donjon{
 	dir = 1;
-	lockid = inquisition;
+	lockid = "inquisition";
 	locked = 1;
 	name = "cells"
 	},
@@ -23566,7 +23566,7 @@
 "mTX" = (
 /obj/structure/mineral_door/bars{
 	locked = 1;
-	lockid = inquisition;
+	lockid = "inquisition;"
 	name = "The Confessum"
 	},
 /turf/open/floor/rogue/blocks/stonered/tiny,
@@ -30271,7 +30271,7 @@
 /area/rogue/under/town/basement)
 "qyq" = (
 /obj/structure/mineral_door/wood/fancywood{
-	lockid = inquisition;
+	lockid = "inquisition;"
 	locked = 1;
 	name = "Inquisitorial Manor"
 	},
@@ -39422,7 +39422,7 @@
 "vrP" = (
 /obj/structure/mineral_door/wood/donjon{
 	dir = 4;
-	lockid = inquisition;
+	lockid = "inquisition;"
 	locked = 1;
 	name = "storage"
 	},
