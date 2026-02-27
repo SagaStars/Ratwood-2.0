@@ -49,8 +49,6 @@
 	var/last_moan = 0
 	var/last_pain = 0
 	var/aphrodisiac = 1 //1 by default, acts as a multiplier on arousal gain. If this is different than 1, set/freeze arousal is disabled.
-	/// When TRUE, try_do_moan does nothing (e.g. stealth handjob so receiver doesn't moan)
-	var/suppress_moan = FALSE
 	/// Which zones we are using in the current action.
 	var/using_zones = list()
 	/// Cache body parts used for accessibility check
@@ -59,6 +57,8 @@
 	var/action_category = SEX_CATEGORY_MISC
 	/// Show progress bar
 	var/show_progress = 1
+	/// When TRUE, try_do_moan does nothing (used for actions that can be done subtly)
+	var/suppress_moan = FALSE
 	/// Knot based variables
 	var/do_knot_action = FALSE
 	var/knotted_status = KNOTTED_NULL // knotted state and used to prevent multiple knottings when we do not handle that case
@@ -938,8 +938,6 @@
 	// Set vars
 	desire_stop = FALSE
 	current_action = action_type
-	suppress_moan = FALSE
-	target?.sexcon?.suppress_moan = FALSE
 	bed = null
 	target_on_bed = FALSE
 	table_or_pillory = null
@@ -955,6 +953,8 @@
 	var/performed_action_type = current_action
 	var/datum/sex_action/action = SEX_ACTION(current_action)
 	show_progress = 1
+	suppress_moan = FALSE
+	target?.sexcon?.suppress_moan = FALSE
 	action.on_start(user, target)
 	find_occupying_furniture()
 	find_occupying_grass()
