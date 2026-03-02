@@ -213,5 +213,6 @@
 		inputty = stripped_input(recipient, "How would you describe your hide?", "TOUGH HIDE", null, 200)
 		if(inputty)
 			hide.desc = inputty
-
+	else //failsafe
+		to_chat(recipient, span_warning("My natural armor vanished! Perhaps some divine intervention might sort things out..."))
 
