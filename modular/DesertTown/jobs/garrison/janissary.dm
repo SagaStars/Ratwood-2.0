@@ -90,16 +90,19 @@
 
 /datum/outfit/job/roguetown/janissary/ranger/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/roguetown/helmet/janissary
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+	// head = /obj/item/clothing/head/roguetown/helmet/janissary
+	head = /obj/item/clothing/head/roguetown/helmet/sallet/raneshen
+	// shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/raneshen
+	// pants = /obj/item/clothing/under/roguetown/trou/leather
+	pants = /obj/item/clothing/under/roguetown/trou/leather/pontifex/raneshen
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat/raneshen
 	cloak = /obj/item/clothing/cloak/half/shadowcloak
 	shoes = /obj/item/clothing/shoes/roguetown/shalal
-	gloves = /obj/item/clothing/gloves/roguetown/leather/black
+	gloves = /obj/item/clothing/gloves/roguetown/leather
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	belt = /obj/item/storage/belt/rogue/leather
 	neck = /obj/item/clothing/neck/roguetown/coif
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat/raneshen
-	pants = /obj/item/clothing/under/roguetown/trou/leather
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve/warden
 	beltr = /obj/item/quiver/arrows
 	beltl = /obj/item/rogueweapon/huntingknife/idagger/steel
@@ -155,15 +158,16 @@
 
 /datum/outfit/job/roguetown/janissary/footman/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/roguetown/helmet/janissary
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+	head = /obj/item/clothing/head/roguetown/helmet/sallet/raneshen
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/raneshen
+	pants = /obj/item/clothing/under/roguetown/trou/leather/pontifex/raneshen
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 	cloak = /obj/item/clothing/cloak/half/shadowcloak
 	shoes = /obj/item/clothing/shoes/roguetown/shalal
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	belt = /obj/item/storage/belt/rogue/leather
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
-	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/janissary
 	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 	backl = /obj/item/rogueweapon/scabbard/gwstrap
 	beltr = /obj/item/rogueweapon/sword/saber/iron
