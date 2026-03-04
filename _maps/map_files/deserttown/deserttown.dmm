@@ -1585,7 +1585,10 @@
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/deserttown/smithguild)
 "aVb" = (
-/obj/effect/landmark/latejoin,
+/obj/effect/landmark/start/adventurerlate{
+	dir = 1
+	},
+/obj/effect/landmark/start/courtagent,
 /turf/open/floor/rogue/sandbrick,
 /area/rogue/outdoors/mountains)
 "aVw" = (
