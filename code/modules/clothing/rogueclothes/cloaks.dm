@@ -1032,6 +1032,14 @@
 	icon_state = "fur_hood"
 	block2add = FOV_BEHIND
 
+/obj/item/clothing/cloak/lepoardcloak
+	name = "Leopard Cloak"
+	desc = "This Regal Cloak is made from the fur of a Lepoard. Worn by those of only the most wealth and prestige."
+	icon_state = "lepoardcape"
+	inhand_mod = FALSE
+	salvage_result = /obj/item/natural/fur
+	allowed_race = NON_DWARVEN_RACE_TYPES
+
 /obj/item/clothing/cloak/cape
 	name = "cape"
 	desc = "A beautiful, flowing cape. Too bad it tangles too much on the vegetation."
@@ -1091,6 +1099,10 @@
 	icon = 'icons/roguetown/clothing/cloaks.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/cloaks.dmi'
 	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'
+
+/obj/item/clothing/cloak/cape/inquisitor/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/storage/concrete/roguetown/cloak)
 
 /obj/item/clothing/cloak/cape/rogue
 	name = "cape"
@@ -1789,6 +1801,17 @@
 	name = "warden cloak"
 	desc = "A cloak worn by the Wardens of the vale's Forests"
 	icon_state = "wardencloak"
+	alternate_worn_layer = CLOAK_BEHIND_LAYER
+	slot_flags = ITEM_SLOT_BACK_R|ITEM_SLOT_CLOAK
+	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'
+	sleevetype = "shirt"
+	nodismemsleeves = TRUE
+	inhand_mod = TRUE
+
+/obj/item/clothing/cloak/poachercloak
+	name = "weathered warden cloak"
+	desc = "A worn-out cloak, which once kept its wearer warm and dry, now merely keeps blood off their clothes."
+	icon_state = "poachercloak"
 	alternate_worn_layer = CLOAK_BEHIND_LAYER
 	slot_flags = ITEM_SLOT_BACK_R|ITEM_SLOT_CLOAK
 	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'

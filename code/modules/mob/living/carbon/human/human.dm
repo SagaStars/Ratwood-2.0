@@ -686,7 +686,6 @@
 	. = ..()
 	VV_DROPDOWN_OPTION("", "---------")
 	VV_DROPDOWN_OPTION(VV_HK_REAPPLY_PREFS, "Reapply Preferences")
-	VV_DROPDOWN_OPTION(VV_HK_COPY_OUTFIT, "Copy Outfit")
 	VV_DROPDOWN_OPTION(VV_HK_SET_SPECIES, "Set Species")
 	VV_DROPDOWN_OPTION(VV_HK_PURGE_PARTOF_SLOT, "Purge Part of Slot")
 	VV_DROPDOWN_OPTION(VV_HK_PURGE_SLOT, "Purge Slot")
@@ -706,7 +705,15 @@
 						if("Flavor")
 							flavortext = null
 							nsfwflavortext = null
+							ooc_extra_img = null
+							ooc_extra_img_link = null
+							nsfw_ooc_extra_img = null
+							nsfw_ooc_extra_img_link = null
 							client.prefs?.flavortext = null
+							client.prefs?.ooc_extra_img = null
+							client.prefs?.ooc_extra_img_link = null
+							client.prefs?.nsfw_ooc_extra_img = null
+							client.prefs?.nsfw_ooc_extra_img_link = null
 						if("Notes")
 							ooc_notes = null
 							erpprefs = null
@@ -736,6 +743,10 @@
 			if(alert(usr,"This cannot be undone. Are you sure?","DON'T FATFINGER THIS","Yes","No") == "Yes")
 				flavortext = null
 				nsfwflavortext = null
+				ooc_extra_img = null
+				ooc_extra_img_link = null
+				nsfw_ooc_extra_img = null
+				nsfw_ooc_extra_img_link = null
 				erpprefs = null
 				ooc_notes = null
 				ooc_extra = null
@@ -746,6 +757,10 @@
 				if(client)
 					client.prefs?.flavortext = null
 					client.prefs?.nsfwflavortext = null
+					client.prefs?.ooc_extra_img = null
+					client.prefs?.ooc_extra_img_link = null
+					client.prefs?.nsfw_ooc_extra_img = null
+					client.prefs?.nsfw_ooc_extra_img_link = null
 					client.prefs?.erpprefs = null
 					client.prefs?.ooc_notes = null
 					client.prefs?.ooc_extra = null
@@ -764,10 +779,6 @@
 		if(!client || !client.prefs)
 			return
 		client.prefs.copy_to(src, TRUE, FALSE)
-	if(href_list[VV_HK_COPY_OUTFIT])
-		if(!check_rights(R_SPAWN))
-			return
-		copy_outfit()
 	if(href_list[VV_HK_SET_SPECIES])
 		if(!check_rights(R_SPAWN))
 			return
@@ -909,6 +920,9 @@
 
 /mob/living/carbon/human/adjust_nutrition(change) //Honestly FUCK the oldcoders for putting nutrition on /mob someone else can move it up because holy hell I'd have to fix SO many typechecks
 	if(HAS_TRAIT(src, TRAIT_NOHUNGER))
+		remove_status_effect(/datum/status_effect/debuff/hungryt1)
+		remove_status_effect(/datum/status_effect/debuff/hungryt2)
+		remove_status_effect(/datum/status_effect/debuff/hungryt3)
 		return FALSE
 	return ..()
 
@@ -919,6 +933,9 @@
 
 /mob/living/carbon/human/adjust_hydration(change)
 	if(HAS_TRAIT(src, TRAIT_NOHUNGER))
+		remove_status_effect(/datum/status_effect/debuff/thirstyt1)
+		remove_status_effect(/datum/status_effect/debuff/thirstyt2)
+		remove_status_effect(/datum/status_effect/debuff/thirstyt3)
 		return FALSE
 	return ..()
 

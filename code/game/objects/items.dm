@@ -183,6 +183,8 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 
 	var/twohands_required = FALSE
 
+	var/from_stockpile = FALSE
+
 	var/bloody_icon = 'icons/effects/blood.dmi'
 	var/bloody_icon_state = "itemblood"
 	var/dam_icon = 'icons/effects/item_damage32.dmi'
@@ -1274,13 +1276,13 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 /obj/item/proc/grind_requirements() //Used to check for extra requirements for grinding an object
 	return TRUE
 
- //Called BEFORE the object is ground up - use this to change grind results based on conditions
- //Use "return -1" to prevent the grinding from occurring
+//Called BEFORE the object is ground up - use this to change grind results based on conditions
+//Use "return -1" to prevent the grinding from occurring
 /obj/item/proc/on_grind()
 
 /obj/item/proc/on_juice()
 
-/obj/item/proc/get_force_string(var/force)
+/obj/item/proc/get_force_string(force)
 	switch(force)
 		if(0 to 9)
 			return "Puny"
