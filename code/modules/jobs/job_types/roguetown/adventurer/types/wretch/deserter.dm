@@ -355,7 +355,7 @@
 				H.change_stat(STATKEY_PER, -1)
 				cloak = /obj/item/clothing/cloak/raincloak/furcloak/brown
 				to_chat(H, span_warning("They call you a savage, a barbarian, a monster. But you are simply making ends meet by taking what others aren't strong enough to protect."))
-			if("Veteran - Skills over Stats") //Master in primary weapon skills and Expert in Knives and Shields, but worse stats -- weighted stat total of +4.
+			if("Veteran - Skills over Stats") //Master in primary weapon skills and Expert in Knives and Shields, but worse stats -- weighted stat total of +5.
 				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, SKILL_LEVEL_MASTER, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_MASTER, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/maces, SKILL_LEVEL_MASTER, TRUE)
