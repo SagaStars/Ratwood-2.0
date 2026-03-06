@@ -1190,7 +1190,7 @@
 	keylock = TRUE
 	grant_resident_key = TRUE
 	resident_key_type = /obj/item/roguekey/townie
-	resident_role = /datum/job/roguetown/villager
+	resident_role = list (/datum/job/roguetown/villager, /datum/job/roguetown/dtvillager)//dt for Desert map role variants. Might be a more elegant way of doing this...
 	lockid = null //Will be randomized
 
 /obj/structure/mineral_door/wood/towner/generic
@@ -1199,15 +1199,15 @@
 	resident_key_amount = 2
 
 /obj/structure/mineral_door/wood/towner/blacksmith
-	resident_advclass = list(/datum/advclass/blacksmith, /datum/advclass/masterblacksmith)
+	resident_advclass = list(/datum/advclass/blacksmith, /datum/advclass/masterblacksmith, /datum/advclass/dtblacksmith,)
 	lockid = "towner_blacksmith"
 
 /obj/structure/mineral_door/wood/towner/cheesemaker
-	resident_advclass = list(/datum/advclass/cheesemaker)
+	resident_advclass = list(/datum/advclass/cheesemaker, /datum/advclass/cheesemaker)
 	lockid = "towner_cheesemaker"
 
 /obj/structure/mineral_door/wood/towner/miner
-	resident_advclass = list(/datum/advclass/miner)
+	resident_advclass = list(/datum/advclass/miner, /datum/advclass/dtminer)
 	lockid = "towner_miner"
 
 /obj/structure/mineral_door/wood/towner/seamstress
