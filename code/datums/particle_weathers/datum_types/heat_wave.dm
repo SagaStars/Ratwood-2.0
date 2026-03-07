@@ -109,7 +109,7 @@
 	alpha = 0
 	duration = 20
 
-/obj/effect/temp_visual/heat_ripple/Initialize()
+/obj/effect/temp_visual/heat_ripple/Initialize(mapload)
 
 	. = ..()
 

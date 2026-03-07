@@ -6,7 +6,7 @@
 	grid_width = 32
 	grid_height = 64
 
-/obj/item/barometer/Initialize()
+/obj/item/barometer/Initialize(mapload)
 	. = ..()
 	GLOB.weather_observers += src
 

@@ -184,7 +184,7 @@
 
 	//Always step severity to start
 	ChangeSeverity()
-    // Once weather actually starts, forecast is consumed
+	// Once weather actually starts, forecast is consumed
 	GLOB.forecast = null
 
 /datum/particle_weather/proc/ChangeSeverity()
@@ -309,7 +309,7 @@
 		L.weather = FALSE
 
 //Not using looping_sounds properly. somebody smart should fix this //actually this kind of works, just done a bit backwards
-/datum/particle_weather/proc/weather_sound_effect(mob/living/L, var/outside = TRUE)
+/datum/particle_weather/proc/weather_sound_effect(mob/living/L, outside = TRUE)
 	var/datum/looping_sound/currentSound = currentSounds[L]
 	if(currentSound)
 		//SET VOLUME

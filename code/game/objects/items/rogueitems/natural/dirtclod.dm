@@ -11,7 +11,7 @@
 	desc = "A handful of snow"
 	icon_state = "snow1"
 
-/obj/item/natural/dirtclod/snow/Initialize()
+/obj/item/natural/dirtclod/snow/Initialize(mapload)
 	..()
 	icon_state = "snow[rand(1,2)]"
 

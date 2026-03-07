@@ -27,7 +27,7 @@ GLOBAL_LIST_EMPTY(active_abyssors_rage)
 	var/sound_loop_delay = 450   // ticks (5 seconds default)
 	var/lifetime = 180 SECONDS
 
-/obj/effect/weather/tornado/Initialize()
+/obj/effect/weather/tornado/Initialize(mapload)
 	. = ..()
 	GLOB.active_tornadoes += src
 
@@ -135,7 +135,7 @@ GLOBAL_LIST_EMPTY(active_abyssors_rage)
 	var/next_destruction = 0
 	lifetime = 240 SECONDS
 
-/obj/effect/weather/tornado/abyssors_rage/Initialize()
+/obj/effect/weather/tornado/abyssors_rage/Initialize(mapload)
 	. = ..()
 	GLOB.active_abyssors_rage += src
 	transform = transform.Scale(1.2, 1.2)
@@ -194,7 +194,7 @@ GLOBAL_LIST_EMPTY(active_abyssors_rage)
 
 	addtimer(CALLBACK(src, PROC_REF(loop_tornado_sound)), sound_loop_delay)
 
-/obj/effect/weather/tornado/dust_devil/Initialize()
+/obj/effect/weather/tornado/dust_devil/Initialize(mapload)
 	. = ..()
 	GLOB.active_dust_devils += src
 	transform = transform.Scale(0.55, 0.55)
