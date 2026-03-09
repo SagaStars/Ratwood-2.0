@@ -27,9 +27,9 @@
 		return "[icon_state]_2"
 	else
 		return "[icon_state]_1"
-	
+
 ///Old Azure code
- /*
+/*
 	if(pp.erect_state == ERECT_STATE_HARD)
 		return "[icon_state]_[min(3,pp.penis_size+1)]"
 	else
@@ -188,6 +188,11 @@
 /datum/sprite_accessory/vagina/hairy
 	icon_state = "hairy"
 	name = "Hairy"
+	color_key_defaults = list(KEY_HAIR_COLOR)
+
+/datum/sprite_accessory/vagina/trimmed
+	icon_state = "trimmed"
+	name = "Trimmed"
 	color_key_defaults = list(KEY_HAIR_COLOR)
 
 /datum/sprite_accessory/vagina/spade

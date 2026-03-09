@@ -197,6 +197,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 
 	var/anonymize = TRUE
 	var/masked_examine = FALSE
+	var/nsfw_examine_always = FALSE
 	var/mute_animal_emotes = FALSE
 	var/autoconsume = FALSE
 	var/runmode = FALSE
@@ -974,7 +975,8 @@ GLOBAL_LIST_EMPTY(chosen_names)
 				dat += "<a class='linkOff' href='byond://?src=[REF(N)];late_join=1'>JOINLATE</a>"
 			dat += " - <a href='?_src_=prefs;preference=migrants'>MIGRATION</a>"
 			dat += "<br><a href='?_src_=prefs;preference=manifest'>ACTORS</a>"
-			dat += " - <a href='?_src_=prefs;preference=observe'>VOYEUR</a>"
+			// Check the git blame for why this was removed.
+			//dat += " - <a href='?_src_=prefs;preference=observe'>VOYEUR</a>"
 	else
 		dat += "<a href='?_src_=prefs;preference=finished'>DONE</a>"
 
@@ -1783,14 +1785,14 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					var voicetype_input = tgui_input_list(user, "Choose your character's voice type", "VOICE TYPE", GLOB.voice_types_list)
 					if(voicetype_input)
 						voice_type = voicetype_input
-						to_chat(user, "<font color='red'>Your character will now vocalize with a [lowertext(voice_type)] affect.</font>")
+						to_chat(user, "<font color='red'>Your character will now vocalize with a [LOWER_TEXT(voice_type)] affect.</font>")
 
 				if ("voicepack")
 					var/voicepack_input = tgui_input_list(user, "Choose your character's emote voice pack", "VOICE PACK", GLOB.voice_packs_list)
 					if(voicepack_input)
 						voice_pack = voicepack_input
 						if(voicepack_input != "Default")
-							to_chat(user, span_red("<font color='red'>Your character will now audibly emote with a [lowertext(voicepack_input)] affect.") + span_notice("<br>This will override your Voice Identity and Class-specific voice packs.</font>"))
+							to_chat(user, span_red("<font color='red'>Your character will now audibly emote with a [LOWER_TEXT(voicepack_input)] affect.") + span_notice("<br>This will override your Voice Identity and Class-specific voice packs.</font>"))
 						else
 							to_chat(user, "<font color='red'>Your character will now audibly emote in accordance to their Voice Identity and any Racial / Class-specific voice packs.</font>")
 
@@ -2323,7 +2325,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 						ShowChoices(user)
 						return
 					ooc_extra_img_link = link
-					var/ext = lowertext(splittext(link, ".")[length(splittext(link, "."))])
+					var/ext = LOWER_TEXT(splittext(link, ".")[length(splittext(link, "."))])
 					var/info
 					switch(ext)
 						if("jpg", "jpeg", "png", "gif")
@@ -2359,7 +2361,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 						ShowChoices(user)
 						return
 					nsfw_ooc_extra_img_link = link
-					var/ext = lowertext(splittext(link, ".")[length(splittext(link, "."))])
+					var/ext = LOWER_TEXT(splittext(link, ".")[length(splittext(link, "."))])
 					var/info
 					switch(ext)
 						if("jpg", "jpeg", "png", "gif")
@@ -2867,10 +2869,11 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					parent.view_actors_manifest()
 					return
 
-				if("observe")
-					var/mob/dead/new_player/P = user
-					P.make_me_an_observer()
-					return
+				// Check the git blame for why this was removed.
+				// if("observe")
+				// 	var/mob/dead/new_player/P = user
+				// 	P.make_me_an_observer()
+				// 	return
 
 				if("finished")
 					user << browse(null, "window=latechoices") //closes late choices window
