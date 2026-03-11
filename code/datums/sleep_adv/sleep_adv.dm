@@ -175,15 +175,9 @@ GLOBAL_LIST_INIT(cross_training_map, list(
 		show_xp = FALSE
 	if(!capped_pre && capped_post && !silent)
 		if(mind.current.construct)
-			to_chat(mind.current, span_nicegreen(pick(list(
-			"My [LOWER_TEXT(skillref.name)] cannot improve without a skill exhibitor.",
-			"A skill exhibitor is required for me to further advance in [LOWER_TEXT(skillref.name)].",
-			))))
+			to_chat(mind.current, span_nicegreen("My [LOWER_TEXT(skillref.name)] cannot improve without a skill exhibitor.",))
 			return
-		to_chat(mind.current, span_nicegreen(pick(list(
-			"My [LOWER_TEXT(skillref.name)] can no longer improve without some rest and meditation...",
-			"There is no knowledge to be gained about [LOWER_TEXT(skillref.name)] before some sleep and self-reflction..",
-		))))
+		to_chat(mind.current, span_nicegreen("My [LOWER_TEXT(skillref.name)] can no longer improve without some rest and meditation...",))
 		if(!COOLDOWN_FINISHED(src, level_up))
 			if((L.client?.prefs.floating_text_toggles & XP_TEXT))
 				L.balloon_alert(L, "<font color = '#9BCCD0'>Level up...</font>")
