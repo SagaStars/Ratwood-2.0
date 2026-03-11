@@ -935,8 +935,8 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 			toggle_ai(AI_ON)
 			return TRUE
 
-	toggle_ai(AI_IDLE)
-	return FALSE
+		toggle_ai(AI_IDLE)
+		return TRUE
 
 /mob/living/simple_animal/adjustHealth(amount, updating_health = TRUE, forced = FALSE)
 	. = ..()

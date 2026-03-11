@@ -1,11 +1,6 @@
 /mob/living/simple_animal/hostile/retaliate
 	var/list/enemies = list()
 
-/mob/living/simple_animal/hostile/retaliate/handle_automated_action()
-	if(target == null) //Workaround for having retaliate mobs not go idle if they have no target
-		return 0
-	..()
-
 /mob/living/simple_animal/hostile/retaliate/attack_hand(mob/living/carbon/human/M)
 	. = ..()
 	if(M.used_intent.type == INTENT_HELP)
