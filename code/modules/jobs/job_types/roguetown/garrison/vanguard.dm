@@ -49,7 +49,6 @@
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	belt = /obj/item/storage/belt/rogue/leather
-	id = /obj/item/scomstone/bad/garrison
 	job_bitflag = BITFLAG_GARRISON
 
 /datum/advclass/vanguard/archer
@@ -90,6 +89,8 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/leather
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
 	beltr = /obj/item/quiver/arrows //replaces sword
+	beltl = /obj/item/rogueweapon/huntingknife/idagger/steel
+	id = /obj/item/scomstone/bad/garrison
 	backpack_contents = list(
 		/obj/item/storage/keyring/guard = 1,
 		/obj/item/flashlight/flare/torch/lantern = 1,
@@ -144,8 +145,9 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 	backl = /obj/item/rogueweapon/scabbard/gwstrap
 	beltr = /obj/item/rogueweapon/sword
-	beltl = /obj/item/rogueweapon/huntingknife
+	beltl = /obj/item/rogueweapon/huntingknife/idagger/steel
 	r_hand = /obj/item/rogueweapon/spear
+	id = /obj/item/scomstone/bad/garrison
 	backpack_contents = list(
 		/obj/item/storage/keyring/guard = 1,
 		/obj/item/flashlight/flare/torch/lantern = 1,
