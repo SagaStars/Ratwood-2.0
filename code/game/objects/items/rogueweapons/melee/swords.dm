@@ -193,6 +193,7 @@
 	unequip_delay_self = 1.5 SECONDS
 	inv_storage_delay = 1.5 SECONDS
 	edelay_type = 1
+	special = /datum/special_intent/shin_swipe
 
 /obj/item/rogueweapon/sword/Initialize(mapload)
 	. = ..()
@@ -305,6 +306,7 @@
 	max_blade_int = 280
 	wdefense_wbonus = 4
 	smeltresult = /obj/item/ingot/steel
+	special = /datum/special_intent/side_sweep
 
 /obj/item/rogueweapon/sword/long/training
 	name = "training sword"
