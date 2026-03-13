@@ -142,6 +142,7 @@
 	icon_state = "wrappings"
 	item_state = "wrappings"
 	sewrepair = TRUE
+	nudist_approved = TRUE
 
 /obj/item/clothing/wrists/roguetown/nocwrappings
 	name = "moon wrappings"
@@ -149,6 +150,7 @@
 	icon_state = "nocwrappings"
 	item_state = "nocwrappings"
 	sewrepair = TRUE
+	nudist_approved = TRUE
 
 /obj/item/clothing/wrists/roguetown/allwrappings
 	name = "wrappings"
@@ -157,6 +159,7 @@
 	icon_state = "nocwrappings" //Greyscale. Accessable in the loadout.
 	item_state = "nocwrappings"
 	sewrepair = TRUE
+	nudist_approved = TRUE
 
 /obj/item/clothing/wrists/roguetown/bracers/cloth
 	name = "cloth bracers"
@@ -176,11 +179,13 @@
 	name = "monk's wrappings"
 	desc = "Sheared burlap and cloth, meticulously fashioned around the forearms. Taut fibers turn weeping gashes into mere tears along the cloth, allowing for Monks to more confidently parry blades with their bare hands."
 	color = "#BFB8A9"
+	nudist_approved = TRUE
 
 /obj/item/clothing/wrists/roguetown/bracers/cloth/naledi
 	name = "sojourner's wrappings"
 	desc = "Sheared burlap and cloth, meticulously fashioned around the forearms. Naledian-trained monks rarely share the same fatalistic mindset as their Otavan cousins, and - consequency - tend to be averse with binding their wrists in jagged thorns. Unbloodied fingers tend to work far better with the arcyne, too. </br>'..And so, the great tears that they wept when it took it's last breath, the rain of the Weeper, is what marked this era of silence. Fools would tell you that Psydon has died, that they splintered into ‘ten smaller fragments', but that does not make sense. They are everything within and without, they are beyond size and shape. How can everything become something? No, they have merely turned their ear from us. They mourn, for their greatest child and their worst..'"
 	color = "#48443B"
+	nudist_approved = TRUE
 
 //Queensleeves
 /obj/item/clothing/wrists/roguetown/royalsleeves
