@@ -34382,10 +34382,10 @@
 	})
 "rxn" = (
 /obj/structure/rack/rogue,
-/obj/item/clothing/cloak/half/shadowcloak,
-/obj/item/clothing/cloak/half/shadowcloak,
-/obj/item/clothing/cloak/half/shadowcloak,
-/obj/item/clothing/cloak/half/shadowcloak,
+/obj/item/clothing/cloak/raincloak/drab,
+/obj/item/clothing/cloak/raincloak/drab,
+/obj/item/clothing/cloak/raincloak/drab,
+/obj/item/clothing/cloak/raincloak/drab,
 /turf/open/floor/rogue/concrete{
 	icon = 'modular/DesertTown/icons/alt/roguefloor.dmi'
 	},
