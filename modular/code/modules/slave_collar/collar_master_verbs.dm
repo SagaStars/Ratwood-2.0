@@ -1,10 +1,3 @@
-/mob/proc/collar_master_control_menu()
-	set name = "Collar Control"
-	set category = "Collar Tab"
-
-	// Legacy verb wrapper: route to the TGUI controller.
-	return collar_master_control_ui()
-
 /mob/proc/collar_master_listen()
 	set name = "Listen to Pets"
 	set category = "Collar Tab"
@@ -145,18 +138,8 @@
 		if(!pet || !pet.mind || !pet.client || !(pet in CM.my_pets))
 			continue
 
-		// Drop held items
-		pet.drop_all_held_items()
-
-		// Remove all clothing except collar
-		for(var/obj/item/I in pet.get_equipped_items())
-			if(!(I.slot_flags & ITEM_SLOT_NECK))  // Don't remove collar
-				pet.dropItemToGround(I, TRUE)
-
-		to_chat(pet, span_userdanger("Your collar tingles as it forces you to remove your clothing!"))
-		pet.visible_message(span_warning("[pet]'s collar pulses with light as they frantically strip their clothing!"))
-		playsound(pet, 'sound/misc/vampirespell.ogg', 50, TRUE)
-		stripped_count++
+		if(CM.force_strip(pet))
+			stripped_count++
 
 	if(stripped_count > 0)
 		to_chat(src, span_notice("You command [stripped_count > 1 ? "[stripped_count] pets" : "your pet"] to strip."))
@@ -181,18 +164,12 @@
 		if(!pet || !pet.mind || !pet.client || !(pet in CM.my_pets))
 			continue
 
-		if(HAS_TRAIT_FROM(pet, TRAIT_NUDIST, COLLAR_TRAIT))
-			REMOVE_TRAIT(pet, TRAIT_NUDIST, COLLAR_TRAIT)
-			to_chat(pet, span_notice("Your collar hums softly as your master grants you permission to wear clothing."))
-			pet.visible_message(span_notice("[pet]'s collar glows briefly as they are permitted to dress."))
-			playsound(pet, 'sound/misc/vampirespell.ogg', 50, TRUE)
-			to_chat(src, span_notice("You grant [pet.real_name] permission to wear clothing."))
-		else
-			ADD_TRAIT(pet, TRAIT_NUDIST, COLLAR_TRAIT)
-			to_chat(pet, span_notice("Your collar hums softly as your master denies you permission to put clothing on."))
-			pet.visible_message(span_notice("[pet]'s collar glows briefly as they are forbidden to dress."))
-			playsound(pet, 'sound/misc/vampirespell.ogg', 50, TRUE)
-			to_chat(src, span_notice("You deny [pet.real_name] permission to wear clothing."))
+		var/permitted = HAS_TRAIT_FROM(pet, TRAIT_NUDIST, COLLAR_TRAIT)
+		if(CM.permit_clothing(pet, permitted))
+			if(permitted)
+				to_chat(src, span_notice("You grant [pet.real_name] permission to wear clothing."))
+			else
+				to_chat(src, span_notice("You deny [pet.real_name] permission to wear clothing."))
 
 /mob/proc/collar_master_toggle_speech()
 	set name = "Toggle Speech"
@@ -273,15 +250,19 @@
 			continue
 
 		// Toggle love status
+		var/love_enabled
 		if(pet.has_status_effect(/datum/status_effect/in_love))
 			pet.remove_status_effect(/datum/status_effect/in_love)
 			REMOVE_TRAIT(pet, TRAIT_LOVESTRUCK, COLLAR_TRAIT)
 			to_chat(pet, span_notice("The overwhelming attraction fades away..."))
+			love_enabled = FALSE
 		else
 			pet.apply_status_effect(/datum/status_effect/in_love, src)
 			ADD_TRAIT(pet, TRAIT_LOVESTRUCK, COLLAR_TRAIT)
 			to_chat(pet, span_love("You feel an overwhelming attraction to [src]!"))
+			love_enabled = TRUE
 		playsound(pet, 'sound/misc/vampirespell.ogg', 50, TRUE)
+		log_collar_command(pet, COLLAR_LOG_LOVE, "enabled=[love_enabled]")
 
 	to_chat(src, span_notice("You toggle love status for [length(CM.temp_selected_pets)] pets."))
 
@@ -322,7 +303,6 @@
 		return
 
 	CM.last_command_time = world.time
-	CM.deny_orgasm = !CM.deny_orgasm
 	var/toggle_count = 0
 
 	for(var/mob/living/carbon/human/pet in CM.temp_selected_pets)
@@ -333,6 +313,94 @@
 			toggle_count++
 
 	to_chat(src, span_notice("Toggled orgasm restriction for [toggle_count] pets."))
+
+/mob/proc/collar_master_toggle_chastity_lock()
+	set name = "Toggle Chastity Lock"
+	set category = "Collar Tab"
+
+	var/datum/component/collar_master/CM = mind?.GetComponent(/datum/component/collar_master)
+	if(!CM || !length(CM.temp_selected_pets))
+		return
+
+	if(world.time < CM.last_command_time + CM.command_cooldown)
+		to_chat(src, span_warning("The collar is still cooling down!"))
+		return
+
+	CM.last_command_time = world.time
+	var/affected = 0
+	for(var/mob/living/carbon/human/pet in CM.temp_selected_pets)
+		if(!pet || !pet.mind || !pet.client || !(pet in CM.my_pets))
+			continue
+		if(CM.toggle_pet_chastity_lock(pet))
+			affected++
+
+	to_chat(src, affected ? span_notice("Toggled chastity lock for [affected] pets.") : span_warning("No selected pets had cursed chastity devices."))
+
+/mob/proc/collar_master_cycle_chastity_front()
+	set name = "Cycle Chastity Front Access"
+	set category = "Collar Tab"
+
+	var/datum/component/collar_master/CM = mind?.GetComponent(/datum/component/collar_master)
+	if(!CM || !length(CM.temp_selected_pets))
+		return
+
+	if(world.time < CM.last_command_time + CM.command_cooldown)
+		to_chat(src, span_warning("The collar is still cooling down!"))
+		return
+
+	CM.last_command_time = world.time
+	var/affected = 0
+	for(var/mob/living/carbon/human/pet in CM.temp_selected_pets)
+		if(!pet || !pet.mind || !pet.client || !(pet in CM.my_pets))
+			continue
+		if(CM.cycle_pet_chastity_front(pet))
+			affected++
+
+	to_chat(src, affected ? span_notice("Cycled chastity front access for [affected] pets.") : span_warning("No selected pets had cursed chastity devices."))
+
+/mob/proc/collar_master_toggle_chastity_anal()
+	set name = "Toggle Chastity Anal Access"
+	set category = "Collar Tab"
+
+	var/datum/component/collar_master/CM = mind?.GetComponent(/datum/component/collar_master)
+	if(!CM || !length(CM.temp_selected_pets))
+		return
+
+	if(world.time < CM.last_command_time + CM.command_cooldown)
+		to_chat(src, span_warning("The collar is still cooling down!"))
+		return
+
+	CM.last_command_time = world.time
+	var/affected = 0
+	for(var/mob/living/carbon/human/pet in CM.temp_selected_pets)
+		if(!pet || !pet.mind || !pet.client || !(pet in CM.my_pets))
+			continue
+		if(CM.toggle_pet_chastity_anal(pet))
+			affected++
+
+	to_chat(src, affected ? span_notice("Toggled chastity anal access for [affected] pets.") : span_warning("No selected pets had cursed chastity devices."))
+
+/mob/proc/collar_master_toggle_chastity_spikes()
+	set name = "Toggle Chastity Spikes"
+	set category = "Collar Tab"
+
+	var/datum/component/collar_master/CM = mind?.GetComponent(/datum/component/collar_master)
+	if(!CM || !length(CM.temp_selected_pets))
+		return
+
+	if(world.time < CM.last_command_time + CM.command_cooldown)
+		to_chat(src, span_warning("The collar is still cooling down!"))
+		return
+
+	CM.last_command_time = world.time
+	var/affected = 0
+	for(var/mob/living/carbon/human/pet in CM.temp_selected_pets)
+		if(!pet || !pet.mind || !pet.client || !(pet in CM.my_pets))
+			continue
+		if(CM.toggle_pet_chastity_spikes(pet))
+			affected++
+
+	to_chat(src, affected ? span_notice("Toggled chastity spikes for [affected] pets.") : span_warning("No selected pets had cursed chastity devices."))
 
 /mob/proc/collar_master_toggle_hallucinate()
 	set name = "Toggle Pet Hallucinations"
@@ -347,20 +415,19 @@
 		return
 
 	CM.last_command_time = world.time
+	var/toggled_count = 0
 
 	for(var/mob/living/carbon/human/pet in CM.temp_selected_pets)
 		if(!pet || !pet.mind || !pet.client || !(pet in CM.my_pets))
 			continue
 
-		if(pet.has_trauma_type(/datum/brain_trauma/mild/hallucinations))
-			pet.cure_trauma_type(/datum/brain_trauma/mild/hallucinations, TRAUMA_RESILIENCE_BASIC)
-			to_chat(pet, span_notice("Your collar pulses and the world becomes clearer."))
-		else
-			pet.gain_trauma(/datum/brain_trauma/mild/hallucinations, TRAUMA_RESILIENCE_BASIC)
-			to_chat(pet, span_warning("Your collar pulses and the world begins to shift and warp!"))
-		playsound(pet, 'sound/misc/vampirespell.ogg', 50, TRUE)
+		if(CM.toggle_hallucinations(pet))
+			toggled_count++
 
-	to_chat(src, span_notice("You toggle hallucinations for [length(CM.temp_selected_pets)] pets."))
+	if(toggled_count > 0)
+		to_chat(src, span_notice("You toggle hallucinations for [toggled_count] pets."))
+	else
+		to_chat(src, span_warning("Failed to toggle hallucinations for any pets!"))
 
 /mob/proc/collar_master_illusion()
 	set name = "Create Illusion"
@@ -425,31 +492,6 @@
 
 	to_chat(src, span_notice("Selected [length(CM.temp_selected_pets)] pets."))
 
-/mob/proc/collar_master_toggle_orgasm()
-	set name = "Toggle Orgasm Denial"
-	set category = "Collar Tab"
-
-	var/datum/component/collar_master/CM = mind?.GetComponent(/datum/component/collar_master)
-	if(!CM || !length(CM.temp_selected_pets))
-		return
-
-	if(world.time < CM.last_command_time + CM.command_cooldown)
-		to_chat(src, span_warning("The collar is still cooling down!"))
-		return
-
-	CM.last_command_time = world.time
-	CM.deny_orgasm = !CM.deny_orgasm
-	var/toggle_count = 0
-
-	for(var/mob/living/carbon/human/pet in CM.temp_selected_pets)
-		if(!pet || !pet.mind || !pet.client || !(pet in CM.my_pets))
-			continue
-
-		if(CM.toggle_denial(pet))
-			toggle_count++
-
-	to_chat(src, span_notice("Toggled orgasm restriction for [toggle_count] pets."))
-
 /mob/proc/collar_master_release_pet()
 	set name = "Release Pet"
 	set category = "Collar Tab"
@@ -469,22 +511,14 @@
 	CM.last_command_time = world.time
 	var/released_count = 0
 
-	for(var/mob/living/carbon/human/pet in CM.temp_selected_pets)
+	var/list/release_targets = CM.temp_selected_pets.Copy()
+	for(var/mob/living/carbon/human/pet in release_targets)
 		if(!pet || !pet.mind || !(pet in CM.my_pets))
 			continue
 
-		// Handle collar removal properly
-		var/obj/item/clothing/neck/roguetown/cursed_collar/collar = pet.get_item_by_slot(SLOT_NECK)
-		if(istype(collar))
-			REMOVE_TRAIT(collar, TRAIT_NODROP, CURSED_ITEM_TRAIT)
-			pet.dropItemToGround(collar, force = TRUE)
-
-		// Let cleanup_pet handle trait removal and slavebourne stats
-		CM.cleanup_pet(pet)
-		CM.temp_selected_pets -= pet
-
-		to_chat(pet, span_notice("You have been released from your collar's control!"))
-		released_count++
+		if(CM.remove_pet(pet))
+			CM.temp_selected_pets -= pet
+			released_count++
 
 	if(released_count > 0)
 		to_chat(src, span_notice("Released [released_count] pets from your control."))
@@ -501,6 +535,7 @@
 
 	var/help_text = {"<span class='notice'><b>Collar Master Commands:</b>
 	- Select Pets: Choose which pets to affect with commands
+	- Open TGUI Control Panel: Open the new persistent collar control interface
 	- Send Message: Send a message through the collar
 	- Force Surrender: Force pets to submit
 	- Shock Pet: Punish pets with varying intensity
@@ -514,6 +549,10 @@
 	- Force Love: They are forced to love you
 	- Toggle Arousal: Toggles their arousal
 	- Toggle Orgasm Denial: Deny orgasms
+	- Toggle Chastity Lock: Locks/unlocks cursed chastity
+	- Cycle Chastity Front Access: cycles ALL SEALED / PENIS OPEN / VAGINA OPEN / ALL OPEN
+	- Toggle Chastity Anal Access: opens or seals anal access on cursed chastity
+	- Toggle Chastity Spikes: toggles genital spikes trait from cursed chastity
 	- Toggle Pet Hallucinations: They will hear things that are not there
 	- Impose Will: Send an unfiltered message to your pet, this could be something they see, feel, etc
 	- Free Pet: Collar will fall to the ground
