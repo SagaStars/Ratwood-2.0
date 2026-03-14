@@ -69,9 +69,15 @@
 		if(rider.m_intent == MOVE_INTENT_RUN)
 			riding_xp_move_counter++
 			if(riding_xp_move_counter >= 5)
-				// Scale XP with rider's STAINT stat, like all other skills do
-				// Award every 5 moves, so multiply by 5 to match movement-based XP frequency
+				// Scale XP with rider's STAINT stat, like other movement-based skill gains.
 				var/xp_amt = rider.STAINT * 0.1
+				var/riding_level = rider.get_skill_level(/datum/skill/misc/riding)
+				// At apprentice and above, gains are slowed to half speed.
+				if(riding_level >= SKILL_LEVEL_APPRENTICE)
+					xp_amt *= 0.5
+				// At zero riding skill, gains are doubled to help reach apprentice faster.
+				else if(riding_level == SKILL_LEVEL_NONE)
+					xp_amt *= 2
 				rider.mind && rider.mind.add_sleep_experience(/datum/skill/misc/riding, xp_amt)
 				riding_xp_move_counter = 0
 		else

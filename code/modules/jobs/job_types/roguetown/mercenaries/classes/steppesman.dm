@@ -47,9 +47,10 @@
 
 	// CLASS ARCHETYPES
 	H.adjust_blindness(-3)
+	var/classchoice
 	if(H.mind)
 		var/classes = list("Starshina - Saber Veteran", "Obyvatel' - Elite Sapper", "Gromoverzhets - Pálya Sapper", "Zastrel'shchik - Light Archer", "Plastunsky - Light Infantry")
-		var/classchoice = input(H, "Choose your archetypes", "Available archetypes") as anything in classes
+		classchoice = input(H, "Choose your archetypes", "Available archetypes") as anything in classes
 	
 	if (H.mind)
 		H.AddSpell(new /obj/effect/proc_holder/spell/self/choose_riding_virtue_mount)

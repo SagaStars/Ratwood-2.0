@@ -1,9 +1,11 @@
 /datum/virtue/utility/riding
-	name = "Saddleborn"
+	name = "Equestrian"
 	desc = "I am skilled at riding animals of all kinds, and have an especially strong bond with one, allowing me to call it from afar and send it away as needed. Should my treasured companion ever die, my mood will not recover."
 	custom_text = "Provides an ability that allows you to select a type of mount to call to your side, and additionally name. Noble characters are able to choose horses. Gains two abilities to send the mount away and call it back as needed (outdoors only). If the chosen mount dies, -10 to mood for the rest of the round (cannot be recovered from in any circumstance)."
+	added_traits = list(TRAIT_EQUESTRIAN)
+	added_stashed_items = list("Saddle" = /obj/item/natural/saddle)
 	added_skills = list(
-		list(/datum/skill/misc/riding, 3, 3)
+		list(/datum/skill/misc/riding, SKILL_LEVEL_APPRENTICE, SKILL_LEVEL_APPRENTICE)
 	)
 
 /datum/virtue/utility/riding/apply_to_human(mob/living/carbon/human/recipient)
@@ -200,7 +202,7 @@ GLOBAL_LIST_INIT(virtue_mount_choices_noble, (list(
 	honse.Immobilize(11 SECONDS)
 	honse.unbuckle_all_mobs(TRUE)
 	if (do_mob(user, honse, 10 SECONDS, double_progress = TRUE) && check_mount(user))
-		honse.stasis = TRUE
+		honse.apply_status_effect(/datum/status_effect/buff/stasis)
 		honse.unbuckle_all_mobs(TRUE)
 		if (!honse.has_buckled_mobs()) // just really super make sure we can't nullspace riders with this
 			honse.moveToNullspace() // BANISHED TO THE NULL DIMENSION!! hopefully this doesn't cause problems
@@ -251,7 +253,7 @@ GLOBAL_LIST_INIT(virtue_mount_choices_noble, (list(
 		callback_time += 5 SECONDS
 		to_chat(user, span_warning("The murderwoods are a dangerous place for a mount to navigate alone..."))
 		dangerous_summon = TRUE
-	if (place.underdark_area)
+	if (istype(place, /area/rogue/under/underdark))
 		callback_time += 30 SECONDS
 		to_chat(user, span_warning("The underdark is a <b>VERY</b> dangerous place for a mount to navigate alone..."))
 		dangerous_summon = TRUE
@@ -280,7 +282,7 @@ GLOBAL_LIST_INIT(virtue_mount_choices_noble, (list(
 	
 	if (do_after(user, callback_time))
 		if (back_from_the_void) // we're summoning from nullspace, so destasis and remove the heal, if we have one
-			honse.stasis = FALSE
+			honse.remove_status_effect(/datum/status_effect/buff/stasis)
 		
 		if (!back_from_the_void && honse_place && !honse_place.outdoors)
 			to_chat(user, span_warning("...but nothing comes. They musn't have heard your whistling."))
