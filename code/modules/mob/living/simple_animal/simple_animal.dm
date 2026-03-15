@@ -242,6 +242,12 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 			adjustHealth(-rand(10,20))
 			if(can_saddle && istype(O, /obj/item/reagent_containers/food/snacks/grown/apple))
 				apply_status_effect(/datum/status_effect/buff/mount_apple_healing, 1)
+				if(istype(src, /mob/living/simple_animal/hostile/retaliate))
+					var/mob/living/simple_animal/hostile/retaliate/retaliating_mount = src
+					if(retaliating_mount.enemies.len)
+						retaliating_mount.enemies = list()
+						visible_message(span_notice("[src] calms down."))
+						retaliating_mount.LoseTarget()
 			if(tame && owner == user)
 				return
 			var/realchance = tame_chance

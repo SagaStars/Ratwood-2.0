@@ -186,6 +186,9 @@
 	retreat_distance = initial(retreat_distance)
 	minimum_distance = initial(minimum_distance)
 
+/mob/living/simple_animal/hostile/retaliate/rogue/proc/is_apple_pacified_mount()
+	return can_saddle && has_status_effect(/datum/status_effect/buff/mount_apple_healing)
+
 /mob/living/simple_animal/hostile/retaliate/rogue/tamed()
 	del_on_deaggro = 0
 	aggressive = 0
@@ -243,6 +246,11 @@
 //	if(flee)
 //		retreat_distance = 10
 //		minimum_distance = 10
+	if(is_apple_pacified_mount())
+		if(enemies.len)
+			enemies = list()
+			LoseTarget()
+		return 0
 	mob_timers["aggro_time"] = world.time
 	..()
 
@@ -264,6 +272,8 @@
 
 /mob/living/simple_animal/hostile/retaliate/rogue/onkick(mob/M)
 	..()
+	if(is_apple_pacified_mount())
+		return
 	Retaliate()
 	GiveTarget(M)
 

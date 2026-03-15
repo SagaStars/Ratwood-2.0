@@ -97,8 +97,11 @@
 	var/mob/living/simple_animal/animal_mount = get_buckled_animal_mount()
 	var/was_mounted = FALSE
 	var/mount_prev_pixel_z
+	var/prev_layer
 	if(animal_mount)
 		mount_prev_pixel_z = animal_mount.pixel_z
+		prev_layer = layer
+		layer = animal_mount.layer + 0.1
 		var/datum/component/riding/mount_riding = animal_mount.GetComponent(/datum/component/riding)
 		if(mount_riding && mount_riding.driver == src)
 			mount_riding.driver = null
@@ -120,7 +123,7 @@
 			if(was_mounted && animal_mount && !QDELETED(animal_mount))
 				animate(animal_mount, pixel_z = animal_mount.pixel_z + 6, time = 1)
 				animate(pixel_z = mount_prev_pixel_z, time = 2)
-			animate(src, pixel_z = pixel_z + 6, transform = turn(transform, flip_angle), time = 1)
+			animate(src, pixel_z = pixel_z + (was_mounted ? 10 : 6), transform = turn(transform, flip_angle), time = 1)
 			animate(transform = turn(transform, flip_angle), time=1)
 			animate(pixel_z = prev_pixel_z, transform = turn(transform, flip_angle), time=1)
 			animate(transform = prev_transform, time = 0)
@@ -128,7 +131,7 @@
 			if(was_mounted && animal_mount && !QDELETED(animal_mount))
 				animate(animal_mount, pixel_z = animal_mount.pixel_z + 6, time = 1)
 				animate(pixel_z = mount_prev_pixel_z, time = 2)
-			animate(src, pixel_z = pixel_z + 6, time = 1)
+			animate(src, pixel_z = pixel_z + (was_mounted ? 10 : 6), time = 1)
 			animate(pixel_z = prev_pixel_z, transform = turn(transform, pick(-12, 0, 12)), time=2)
 			animate(transform = prev_transform, time = 0)
 
@@ -166,6 +169,9 @@
 		for(var/o in mob_offsets)
 			if(mob_offsets[o])
 				reset_offsets(o)
+
+	if(was_mounted && !isnull(prev_layer))
+		layer = prev_layer
 
 	if(was_mounted && animal_mount && !QDELETED(animal_mount) && isturf(src.loc))
 		animal_mount.forceMove(get_turf(src))
