@@ -1294,7 +1294,7 @@
 	verbage_simple = "construst"
 	verbage = "constructs"
 	skillcraft = /datum/skill/craft/carpentry
-
+	craftdiff = 2
 
 /datum/crafting_recipe/roguetown/structure/drawer1// oh boy time to add drawers for all five of them, drawers are randomized and theres five different sprites that are all unique enough
 	name = "Long Dresser"
