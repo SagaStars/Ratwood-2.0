@@ -87,6 +87,24 @@
 
 	return mchastitydildo
 
+/**
+ * Called by toggle_extreme_ERP() (via hascall) when the player disables extreme ERP content.
+ * If the player is currently wearing a spiked chastity device (chastity_type >= 3), it is
+ * forcibly removed and dropped at their feet — spiked devices are extreme content and must
+ * not remain on a player who has opted out of that category.
+ * Non-spiked devices are left undisturbed.
+ */
+/client/proc/modular_handle_extreme_erp_toggle_disable()
+	if(!ishuman(mob))
+		return
+	var/mob/living/carbon/human/human_mob = mob
+	var/obj/item/chastity/device = human_mob.chastity_device
+	if(!device || device.chastity_type < 3)
+		return
+	device.remove_chastity(human_mob)
+	device.forceMove(get_turf(human_mob))
+	human_mob.visible_message(span_notice("[human_mob]'s spiked chastity device falls away as the divine hand of Eora rejects the cruel ironwork."))
+
 /client/proc/modular_handle_chastity_toggle_disable()
 	if(!ishuman(mob))
 		return

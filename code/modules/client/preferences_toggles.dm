@@ -183,6 +183,19 @@
 		log_game("[key_name(src)] disabled permanent chastity binding via humiliation prayer.")
 		message_admins("[key_name_admin(src)] disabled permanent chastity binding by reciting the humiliation prayer.")
 
+/client/verb/toggle_extreme_ERP()// toggles gore, ryona, and other extreme content in the ERP panel. This is separate from the regular ERP toggle for users who want to avoid just the extreme content but are okay with milder stuff.
+	set category = "Options"
+	set name = "Toggle Extreme ERP Content"
+	if(prefs)
+		prefs.extreme_erp = !prefs.extreme_erp
+		prefs.save_preferences()
+		if(prefs.extreme_erp)
+			to_chat(src, "Extreme ERP content enabled in the ERP panel.")
+		else
+			if(hascall(src, "modular_handle_extreme_erp_toggle_disable"))
+				call(src, "modular_handle_extreme_erp_toggle_disable")()
+			to_chat(src, "Extreme ERP content disabled in the ERP panel.")
+
 /client/verb/toggle_compliance_notifs() // The messages need to be on-by-default while this is in its early stages.
 	set category = "Options"
 	set name = "Toggle Compliance Notifs"
