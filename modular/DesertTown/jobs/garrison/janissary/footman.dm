@@ -37,9 +37,9 @@
 /datum/outfit/job/roguetown/janissary/footman/pre_equip(mob/living/carbon/human/H)
 	..()
 
-	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/mamaluke
+	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/janissary
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
-	head = /obj/item/clothing/head/roguetown/helmet/mamalukehelm
+	head = /obj/item/clothing/head/roguetown/helmet/janissaryhelm
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
 	gloves = /obj/item/clothing/gloves/roguetown/chain
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
