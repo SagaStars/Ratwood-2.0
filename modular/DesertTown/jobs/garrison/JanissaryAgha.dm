@@ -53,7 +53,7 @@
 	pants = /obj/item/clothing/under/roguetown/chainlegs/kilt
 	cloak = /obj/item/clothing/cloak/dunestalker
 	neck = /obj/item/clothing/neck/roguetown/bevor
-	shoes = /obj/item/clothing/shoes/roguetown/shalal
+	shoes = /obj/item/clothing/shoes/roguetown/shalal/reinforced
 	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
