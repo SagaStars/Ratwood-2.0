@@ -11,7 +11,7 @@
 #define CTAG_SLAVEMASTER	"CAT_SLAVEMASTER"
 // #define CTAG_DTTOWNER		"CAT_DTTOWNER"
 #define CTAG_PSLAVE			"CAT_PSLAVE"
-#define CTAG_DTCOURTMAGE	"CAT_DTCOURTMAGE"
+// #define CTAG_DTCOURTMAGE	"CAT_DTCOURTMAGE"
 #define CTAG_HEADSLAVE		"CAT_HEADSLAVE"		// Seneschal's aesthetic choices.
 
 
@@ -55,7 +55,7 @@
 // #define COURTIERS	(1<<3)
 
 // #define JESTER		(1<<0)
-#define DTWIZARD		(1<<1)
+// #define DTWIZARD		(1<<1)
 // #define PHYSICIAN 	(1<<2)
 #define HEADSLAVE		(1<<3)
 #define SHEIKH	(1<<4)

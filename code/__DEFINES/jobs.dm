@@ -344,7 +344,6 @@
 	/datum/job/roguetown/butler,\
 	/datum/job/roguetown/apothecary,\
 	/datum/job/roguetown/magician,\
-	/datum/job/roguetown/dtmagician,\
 	/datum/job/roguetown/headslave,\
 	/datum/job/roguetown/slave,\
 

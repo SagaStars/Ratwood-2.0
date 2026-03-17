@@ -17,12 +17,16 @@
 		/datum/job/roguetown/captain = list(display_title = "Cataphract Captain"),
 		/datum/job/roguetown/physician = list(display_title = "Palace Physician"),
 		/datum/job/roguetown/villager = list(display_title = "Villager"),
+		/datum/job/roguetown/magician = list(display_title = "Palace Magician"),
 	)
 	tutorial_adjust = list(
 		/datum/job/roguetown/marshal = "CHANGE THIS LATER. Manage the town outside of the palace. Hang out in the mayor building!!!",
 		/datum/job/roguetown/physician = "You are a master physician, trusted by the Sultan themself to administer expert care to the Royal family, the court, \
 		its protectors and its subjects. While primarily a resident of the keep in the palace medical wing, you also have access \
 		 to the local clinic in the bazaar, where lesser licensed apothecaries ply their trade under your occasional passing tutelage.",
+		/datum/job/roguetown/magician = "Your creed is one dedicated to the conquering of the arcane arts and the constant thrill of knowledge. \
+		You owe your life to the Sultan, for it was his coin that allowed you to continue your studies in these dark times. \
+		In return, you have proven time and time again as justicar and trusted advisor to their reign."
 	)
 	/// Jobs that this map won't use
 	blacklist = list(
@@ -47,11 +51,12 @@
 
 		/datum/job/roguetown/butler,// headslave
 		/datum/job/roguetown/councillor,// sheikh
-		/datum/job/roguetown/magician,// palace magician
+		// /datum/job/roguetown/magician,// moved to an if-map-then-outfit statement in the baseblock
 		/datum/job/roguetown/jester, //are jesters really a desert thing? Maybe ought to push people into playing slaves instead..?
 		// /datum/job/roguetown/physician,
 
 		/datum/job/roguetown/manorguard,//  mamaluk
+		/datum/job/roguetown/rookie,//  mamaluk
 		/datum/job/roguetown/guardsman,//  mamaluk
 		/datum/job/roguetown/vanguard,//  jannissary
 		/datum/job/roguetown/warden,//  jannissary

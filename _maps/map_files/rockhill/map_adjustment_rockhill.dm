@@ -14,7 +14,6 @@
 
 		/datum/job/roguetown/headslave,
 		/datum/job/roguetown/sheikh,
-		/datum/job/roguetown/dtmagician,
 
 		/datum/job/roguetown/mamluk,
 		/datum/job/roguetown/mamluksergeant,

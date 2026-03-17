@@ -2919,7 +2919,6 @@
 #include "modular\DesertTown\jobs\courtslave.dm"
 #include "modular\DesertTown\jobs\desertjobs.dm"
 #include "modular\DesertTown\jobs\courtier\headslave.dm"
-#include "modular\DesertTown\jobs\courtier\palacemagician.dm"
 #include "modular\DesertTown\jobs\courtier\sheikh.dm"
 #include "modular\DesertTown\jobs\garrison\janissary.dm"
 #include "modular\DesertTown\jobs\garrison\JanissaryAgha.dm"
