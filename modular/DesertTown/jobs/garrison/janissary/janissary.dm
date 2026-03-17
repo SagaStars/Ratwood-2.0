@@ -34,7 +34,6 @@
 
 /datum/outfit/job/roguetown/janissary
 	shoes = /obj/item/clothing/shoes/roguetown/shalal
-	beltl = /obj/item/rogueweapon/whip
 	belt = /obj/item/storage/belt/rogue/leather
 	backr = /obj/item/storage/backpack/rogue/satchel
 	id = /obj/item/scomstone/bad/garrison
