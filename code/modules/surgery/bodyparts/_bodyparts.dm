@@ -724,7 +724,14 @@
 			draw_organ_features = FALSE
 		if(NO_BODYPART_FEATURES in owner_species.species_traits)
 			draw_bodypart_features = FALSE
-
+	
+	// Markings overlays
+	if(!skeletonized && draw_bodypart_features)
+		var/list/marking_overlays = get_markings_overlays(override_color)
+		if(marking_overlays)
+			. += marking_overlays
+	
+	// Organ overlays
 	if(!skeletonized && draw_organ_features)
 		for(var/obj/item/organ/organ as anything in get_organs())
 			if(organ.is_visible())
