@@ -16,7 +16,7 @@ GLOBAL_VAR_INIT(mine_collapse_active, 0)
 	max_integrity = 0
 	obj_flags = INDESTRUCTIBLE
 	var/last_trigger = 0
-	var/time_between_triggers = 1 MINUTES //takes a minute to recharge
+	var/time_between_triggers = 2 MINUTES
 	var/datum/weakref/support_beam_ref = null
 
 	var/turf/closed/respawn_rock = /turf/closed/mineral/rogue
