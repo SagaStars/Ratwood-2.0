@@ -22,7 +22,7 @@
 		/datum/job/roguetown/dtprince,
 		/datum/job/roguetown/adventurer/courtslave,
 		        
-		/datum/job/roguetown/townguard,
+		/datum/job/roguetown/guardsman,
 		/datum/job/roguetown/vanguard)
 	slot_adjust = list(
 		/datum/job/roguetown/warden = 6,
