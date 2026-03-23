@@ -1283,7 +1283,7 @@
 	cold_protection = CHEST | ARM_RIGHT | ARM_LEFT
 	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
 	heat_protection = CHEST | ARM_RIGHT | ARM_LEFT
-	max_heat_protection_temperature = BODYTEMP_HEAT_LEVEL_ONE_MAX
+	max_heat_protection_temperature = 600
 
 /obj/item/clothing/cloak/half/ComponentInitialize()
 	. = ..()
