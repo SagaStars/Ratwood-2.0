@@ -12,7 +12,7 @@
 	tutorial = "You may have inherited this role, bought your way into it, or were appointed by the Royal Family themselves; \
 			Regardless of origin, you now serve as an assistant, planner, and juror for the Vizier. \
 			You help him oversee the taxation, construction, and planning of new laws. \
-			You only answer to the Sultan, Sultana, Heir, or Heiress. However, your main focus is to assist the Vizier with their duties."
+			Your main focus is to assist the Vizier with their duties, answering only to them and the Sultan."
 	whitelist_req = FALSE
 	outfit = /datum/outfit/job/roguetown/sheikh
 	advclass_cat_rolls = list(CTAG_SHEIKH = 2)
