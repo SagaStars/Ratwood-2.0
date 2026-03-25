@@ -37,12 +37,20 @@
 	projectile_type = /obj/projectile/bullet/reusable/bolt/paalloy
 
 /obj/item/ammo_casing/caseless/rogue/bolt/blunt
-	name = "blunt bolt"
-	desc = "A crossbow bolt without the part that pierces skulls. That doesn't mean it won't kill you."
+	name = "practice bolt"
+	desc = "A crossbow bolt headed with a padded wad. More annoying than deadly."
 	projectile_type = /obj/projectile/bullet/reusable/bolt/blunt
 	possible_item_intents = list(/datum/intent/mace/strike)
 	icon_state = "bolt_blunt"
 	force = 5
+
+/obj/item/ammo_casing/caseless/rogue/bolt/blunt/heavy
+	name = "heavy blunt bolt"
+	desc = "A crossbow bolt with a fat metal head. Built to break bones."
+	projectile_type = /obj/projectile/bullet/reusable/bolt/blunt/heavy
+	possible_item_intents = list(/datum/intent/mace/strike)
+	icon_state = "bolt_blunt"
+	force = 10
 
 /obj/projectile/bullet/reusable/bolt
 	name = "bolt"
@@ -76,12 +84,14 @@
 	embedchance = 0
 	woundclass = BCLASS_BLUNT
 	ammo_type = /obj/item/ammo_casing/caseless/rogue/bolt/blunt
+	hitsound = 'sound/combat/hits/blunt/woodblunt (2).ogg'
 
-/obj/projectile/bullet/reusable/bolt/blunt
-	damage = 25
-	armor_penetration = 0
-	embedchance = 0
+/obj/projectile/bullet/reusable/bolt/blunt/heavy
+	damage = 50
+	armor_penetration = 50
+	embedchance = 5
 	woundclass = BCLASS_BLUNT
+	speed = 0.4
 
 /obj/projectile/bullet/reusable/bolt/on_hit(atom/target)
 	. = ..()
