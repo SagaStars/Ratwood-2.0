@@ -113,33 +113,7 @@
 
 /datum/species/gnoll/update_damage_overlays(mob/living/carbon/human/H)
 	H.remove_overlay(DAMAGE_LAYER)
-	var/list/hands = list()
-	var/mutable_appearance/inhand_overlay = mutable_appearance("[H.icon_state]-dam", layer=-DAMAGE_LAYER)
-	var/burnhead = 0
-	var/brutehead = 0
-	var/burnch = 0
-	var/brutech = 0
-	var/obj/item/bodypart/affecting = H.get_bodypart(BODY_ZONE_HEAD)
-	if(affecting)
-		burnhead = (affecting.burn_dam / affecting.max_damage)
-		brutehead = (affecting.brute_dam / affecting.max_damage)
-	affecting = H.get_bodypart(BODY_ZONE_CHEST)
-	if(affecting)
-		burnch = (affecting.burn_dam / affecting.max_damage)
-		brutech = (affecting.brute_dam / affecting.max_damage)
-	var/usedloss = 0
-	if(burnhead > usedloss)
-		usedloss = burnhead
-	if(brutehead > usedloss)
-		usedloss = brutehead
-	if(burnch > usedloss)
-		usedloss = burnch
-	if(brutech > usedloss)
-		usedloss = brutech
-	inhand_overlay.alpha = 255 * usedloss
-
-	hands += inhand_overlay
-	H.overlays_standing[DAMAGE_LAYER] = hands
+	H.overlays_standing[DAMAGE_LAYER] = list()
 	H.apply_overlay(DAMAGE_LAYER)
 	return TRUE
 

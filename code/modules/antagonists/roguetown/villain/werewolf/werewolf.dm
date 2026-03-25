@@ -165,6 +165,7 @@
 	name = "Verevolf Claw"
 	desc = ""
 	item_state = null
+	experimental_inhand = FALSE
 	lefthand_file = null
 	righthand_file = null
 	icon = 'icons/roguetown/weapons/unarmed32.dmi'
