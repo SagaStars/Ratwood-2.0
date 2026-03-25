@@ -38,7 +38,7 @@
 		"Adventurer" = TRUE,
 		"Vanguard" = TRUE,
 		"City Guard" = TRUE,
-		"Bandit" = TRUE
+		"Bandit" = TRUE,
 		"Watch Captain" = TRUE,
 		"Master Warden" = TRUE
 	)
