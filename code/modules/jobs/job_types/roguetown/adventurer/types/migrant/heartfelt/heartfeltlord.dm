@@ -61,7 +61,7 @@
 
 /datum/outfit/job/heartfelt/lord/lord/pre_equip(mob/living/carbon/human/H)
 	..()
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	belt = /obj/item/storage/belt/rogue/leather/black
 	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
 	pants = /obj/item/clothing/under/roguetown/tights/black
@@ -82,7 +82,7 @@
 		/obj/item/storage/belt/rogue/pouch/coins/veryrich = 2,
 		/obj/item/reagent_containers/glass/bottle/alchemical/healthpotnew = 2,
 		/obj/item/natural/feather = 1,
-		/obj/item/paper = 1,
+		/obj/item/paper/scroll = 1,
 		)
 	id = /obj/item/scomstone
 	if(H.mind)
@@ -147,7 +147,7 @@
 	r_hand = /obj/item/rogueweapon/woodstaff/diamond
 	beltr = /obj/item/rogueweapon/huntingknife
 	gloves = /obj/item/clothing/gloves/roguetown/leather/black
-	backl = /obj/item/storage/backpack/rogue/satchel // Paper and Feather
+	backl = /obj/item/storage/backpack/rogue/satchel
 	var/turf/TU = get_turf(H)
 	if(TU)
 		new /mob/living/simple_animal/hostile/retaliate/rogue/saiga/tame/saddled(TU)
@@ -159,7 +159,7 @@
 		/obj/item/reagent_containers/glass/bottle/alchemical/healthpotnew = 1,
 		/obj/item/reagent_containers/glass/bottle/alchemical/strongmanapot = 1,
 		/obj/item/natural/feather = 1,
-		/obj/item/paper = 1,
+		/obj/item/paper/scroll = 1,
 	)
 	id = /obj/item/scomstone
 	if(H.mind)
@@ -300,7 +300,7 @@
 		/obj/item/storage/belt/rogue/pouch/coins/rich = 1,
 		/obj/item/reagent_containers/glass/bottle/alchemical/healthpotnew = 2,
 		/obj/item/natural/feather = 1,
-		/obj/item/paper = 1,
+		/obj/item/paper/scroll = 1,
 		)
 	id = /obj/item/scomstone
 	if(H.mind)
