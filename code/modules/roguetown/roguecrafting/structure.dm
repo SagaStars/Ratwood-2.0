@@ -150,6 +150,14 @@
 	verbage_simple = "construct"
 	verbage = "constructs"
 
+/datum/crafting_recipe/roguetown/structures/zizocross
+	name = "inverted wooden cross"
+	result = /obj/structure/fluff/psycross/zizocross
+	reqs = list(/obj/item/grown/log/tree/small = 2)
+	verbage_simple = "construct"
+	verbage = "constructs"
+	craftdiff = 3
+
 /datum/crafting_recipe/roguetown/structure/zizo_shrine
 	name = "profane shrine"
 	reqs = list(
@@ -560,6 +568,16 @@
 	verbage = "constructs"
 	skillcraft = /datum/skill/craft/carpentry
 	buildsame = TRUE
+
+/datum/crafting_recipe/roguetown/structure/wallshelf
+	name = "wall shelf (1 plank)"
+	result = /obj/structure/rack/rogue/shelf
+	reqs = list(/obj/item/natural/wood/plank = 1)
+	wallcraft = TRUE
+	verbage_simple = "construct"
+	verbage = "constructs"
+	skillcraft = /datum/skill/craft/carpentry
+	craftdiff = 2
 
 /datum/crafting_recipe/roguetown/structure/mineshaft_support
 	name = "mineshaft support"
@@ -1374,8 +1392,18 @@
 	reqs = list(/obj/item/natural/wood/plank = 2,/obj/item/roguegear = 1, /obj/item/ingot/iron = 1)
 	verbage_simple = "construst"
 	verbage = "constructs"
-	skillcraft = /datum/skill/craft/carpentry
+	skillcraft = /datum/skill/craft/engineering
 	craftdiff = 2
+
+/datum/crafting_recipe/roguetown/structure/wallclock
+	name = "Wall Clock (North)"
+	result = /obj/structure/fluff/wallclock
+	reqs = list(/obj/item/natural/wood/plank = 2,/obj/item/roguegear = 1, /obj/item/ingot/iron = 1)
+	verbage_simple = "construst"
+	verbage = "constructs"
+	skillcraft = /datum/skill/craft/engineering
+	craftdiff = 2
+	wallcraft = TRUE
 
 /datum/crafting_recipe/roguetown/structure/drawer1// oh boy time to add drawers for all five of them, drawers are randomized and theres five different sprites that are all unique enough
 	name = "Long Dresser"
@@ -1457,3 +1485,59 @@
 	verbage = "constructs"
 	skillcraft = /datum/skill/craft/carpentry
 	craftdiff = 3
+
+// hanging chains
+
+/datum/crafting_recipe/roguetown/structure/hangingchains
+	name = "Hanging Chains"
+	result = /obj/structure/fluff/walldeco/chains
+	reqs = list(/obj/item/ingot/iron = 1, /obj/item/rope/chain = 2)
+	verbage_simple = "construst"
+	verbage = "constructs"
+	skillcraft = /datum/skill/craft/engineering
+	craftdiff = 1
+
+// floor candles
+
+/datum/crafting_recipe/roguetown/structure/floorcandle
+    name = "floor candles"
+    result = /obj/machinery/light/rogue/wallfire/candle/floorcandle
+    reqs = list(/obj/item/candle/yellow = 2)
+    verbage_simple = "build"
+    verbage = "builds"
+    skillcraft = /datum/skill/craft/masonry
+    wallcraft = FALSE
+    craftdiff = 0
+
+
+/datum/crafting_recipe/roguetown/structure/floorcandlealt
+    name = "alt floor candles"
+    result = /obj/machinery/light/rogue/wallfire/candle/floorcandle/alt
+    reqs = list(/obj/item/candle/yellow = 2)
+    verbage_simple = "build"
+    verbage = "builds"
+    skillcraft = /datum/skill/craft/masonry
+    wallcraft = FALSE
+    craftdiff = 0
+
+
+/datum/crafting_recipe/roguetown/structure/floorcandlepink
+    name = "eoran floor candles"
+    result = /obj/machinery/light/rogue/wallfire/candle/floorcandle/pink
+    reqs = list(/obj/item/candle/eora = 2)
+    verbage_simple = "build"
+    verbage = "builds"
+    skillcraft = /datum/skill/craft/masonry
+    wallcraft = FALSE
+    craftdiff = 0
+
+
+/datum/crafting_recipe/roguetown/structure/floorcandlealtpink
+    name = "alt eoran floor candles"
+    result = /obj/machinery/light/rogue/wallfire/candle/floorcandle/alt/pink
+    reqs = list(/obj/item/candle/eora = 2)
+    verbage_simple = "build"
+    verbage = "builds"
+    skillcraft = /datum/skill/craft/masonry
+    wallcraft = FALSE
+    craftdiff = 0
