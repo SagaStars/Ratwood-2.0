@@ -8,7 +8,7 @@
 	map_file_name = "deserttown.dmm"
 	realm_name = "Al-Ashur"
 	slot_adjust = list(
-		/datum/job/roguetown/mercenary = 7, //haha fuck you one less slot!!
+		// /datum/job/roguetown/mercenary = 7, //haha fuck you one less slot!!
 	)
 	title_adjust = list(
 		/datum/job/roguetown/lord = list(display_title = "Sultan", f_title = "Sultana"),//this just effects the Lord Name code that effects global messages like from the throne
