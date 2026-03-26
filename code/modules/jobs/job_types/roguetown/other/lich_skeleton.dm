@@ -40,9 +40,9 @@ LICH SKELETONS
 
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
-	H.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
@@ -72,22 +72,17 @@ LICH SKELETONS
 	switch(weapon_choice)
 		if("Gladius")
 			beltr = /obj/item/rogueweapon/sword/short/gladius/pagladius
-			H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 			beltl = /obj/item/rogueweapon/scabbard
 		if("Kopesh")
 			beltr = /obj/item/rogueweapon/sword/sabre/palloy
-			H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 			beltl = /obj/item/rogueweapon/scabbard
 		if("Shortsword")
 			beltr = /obj/item/rogueweapon/sword/short/pashortsword
-			H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 			beltl = /obj/item/rogueweapon/scabbard
 		if("Axe")
 			beltr = /obj/item/rogueweapon/stoneaxe/woodcut/steel/paaxe
-			H.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 		if("Flail")
 			beltr = /obj/item/rogueweapon/flail/sflail/paflail
-			H.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
 
 	H.energy = H.max_energy
 
@@ -111,9 +106,9 @@ LICH SKELETONS
 
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
-	H.adjust_skillrank(/datum/skill/combat/bows , 4, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/slings, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/bows , 5, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/crossbows, 5, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/slings, 5, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
@@ -143,19 +138,15 @@ LICH SKELETONS
 		if("Recurve Bow")
 			l_hand = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 			beltl = /obj/item/quiver/paalloy
-			H.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 		if("Crossbow")
 			l_hand = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 			beltl = /obj/item/quiver/bolts/paalloy
-			H.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
 		if("Yew Longbow")
 			l_hand = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow
 			beltl = /obj/item/quiver/paalloy
-			H.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 		if("Sling")
 			l_hand = /obj/item/gun/ballistic/revolver/grenadelauncher/sling
 			beltl = /obj/item/quiver/sling/paalloy
-			H.adjust_skillrank(/datum/skill/combat/slings, 1, TRUE)
 
 	H.energy = H.max_energy
 
@@ -179,9 +170,9 @@ LICH SKELETONS
 
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 
-	H.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/shields, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
@@ -203,32 +194,25 @@ LICH SKELETONS
 	gloves = /obj/item/clothing/gloves/roguetown/chain/paalloy
 
 	H.adjust_blindness(-3)
-	var/weapons = list("Greatsword", "Bardiche", "Grand Mace", "Mace + Shield","Spear", "Warhammer + Shield")
+	var/weapons = list("Greatsword", "Bardiche", "Grand Mace", "Mace + Shield","Spear + Shield", "Warhammer + Shield")
 	var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Greatsword")
 			r_hand = /obj/item/rogueweapon/greatsword/paalloy
-			H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 		if("Bardiche")
 			r_hand = /obj/item/rogueweapon/halberd/bardiche/paalloy
-			H.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 		if("Grand Mace")
 			r_hand = /obj/item/rogueweapon/mace/goden/steel/paalloy
-			H.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
 		if("Mace + Shield")
 			r_hand = /obj/item/rogueweapon/mace/steel/palloy
 			l_hand = /obj/item/rogueweapon/shield/wood
-			H.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
-		if("Spear")
+		if("Spear + Shield")
 			r_hand = /obj/item/rogueweapon/spear/paalloy
-			H.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 			l_hand = /obj/item/rogueweapon/shield/wood
 		if("Warhammer + Shield")
 			r_hand = /obj/item/rogueweapon/mace/warhammer/steel/paalloy
 			l_hand = /obj/item/rogueweapon/shield/wood
-			H.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
-			H.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
 
 	H.energy = H.max_energy
 
@@ -254,6 +238,7 @@ LICH SKELETONS
 
 	H.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/bows , 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/slings, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
