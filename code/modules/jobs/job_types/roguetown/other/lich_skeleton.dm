@@ -73,12 +73,15 @@ LICH SKELETONS
 		if("Gladius")
 			beltr = /obj/item/rogueweapon/sword/short/gladius/pagladius
 			H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+			beltl = /obj/item/rogueweapon/scabbard
 		if("Kopesh")
 			beltr = /obj/item/rogueweapon/sword/sabre/palloy
 			H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+			beltl = /obj/item/rogueweapon/scabbard
 		if("Shortsword")
 			beltr = /obj/item/rogueweapon/sword/short/pashortsword
 			H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+			beltl = /obj/item/rogueweapon/scabbard
 		if("Axe")
 			beltr = /obj/item/rogueweapon/stoneaxe/woodcut/steel/paaxe
 			H.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
