@@ -266,6 +266,8 @@
 
 /// Checks to see if you can mobswap with another mob
 /mob/living/proc/can_mobswap_with(mob/other)
+	return FALSE // Current TM, disabling mobswap and making sure the rest of the movement works fine
+	/*
 	if(HAS_TRAIT(other, TRAIT_NOMOBSWAP) || HAS_TRAIT(src, TRAIT_NOMOBSWAP))
 		return FALSE
 
@@ -309,6 +311,7 @@
 
 	// Else, sure, let us pass
 	return TRUE
+	*/
 
 //Called when we bump onto an obj
 /mob/living/proc/ObjBump(obj/O)
