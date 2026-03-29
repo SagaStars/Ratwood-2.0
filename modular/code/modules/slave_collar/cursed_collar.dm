@@ -38,7 +38,7 @@
 	var/added = is_hemi ? 2 : 1
 	received_cum_count += added
 	var/tally_msg = added == 1 ? "A metal scraping sound is briefly heard, a tally mark suddenly appears on [wearer]'s collar." : "A metal scraping sound is briefly heard, two tally marks suddenly appear on [wearer]'s collar."
-	for(var/mob/M in viewers(1, src))
+	for(var/mob/M in viewers(1, wearer))
 		to_chat(M, span_notice(tally_msg))
 	return TRUE
 
