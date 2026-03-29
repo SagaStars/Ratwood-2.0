@@ -143,8 +143,9 @@
 	cloak = /obj/item/clothing/cloak/heartfelt
 	armor = /obj/item/clothing/cloak/black_cloak
 	neck = /obj/item/storage/belt/rogue/pouch/coins/veryrich
-	beltl = /obj/item/flashlight/flare/torch/lantern
+	beltl = /obj/item/storage/magebag/associate
 	r_hand = /obj/item/rogueweapon/woodstaff/diamond
+	l_hand = /obj/item/flashlight/flare/torch/lantern
 	beltr = /obj/item/rogueweapon/huntingknife
 	gloves = /obj/item/clothing/gloves/roguetown/leather/black
 	backl = /obj/item/storage/backpack/rogue/satchel
