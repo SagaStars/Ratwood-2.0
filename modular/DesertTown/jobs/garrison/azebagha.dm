@@ -147,6 +147,6 @@
 				beltr = /obj/item/quiver/arrows
 				backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow/warden
 			if("Handgonne")//okay I can remove this later but I think it would be... just... so based
-				r_hand = /obj/item/gun/ballistic/firearm/handgonne
-				l_hand = /obj/item/powderflask
+				backl = /obj/item/gun/ballistic/firearm/handgonne
+				r_hand = /obj/item/powderflask
 				beltr = /obj/item/quiver/bullet/lead
