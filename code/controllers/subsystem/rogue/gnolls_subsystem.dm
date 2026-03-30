@@ -22,7 +22,7 @@ SUBSYSTEM_DEF(gnoll_scaling)
 	var/flat_mode_recheck_below_players = 75
 	var/dynamic_mode_base_slots = 2
 	var/dynamic_mode_start_players = 75
-	var/dynamic_mode_players_per_extra_slot = 15
+	var/dynamic_mode_players_per_extra_slot = 25
 	var/dynamic_mode_recheck_below_players = 90
 
 /datum/controller/subsystem/gnoll_scaling/proc/get_mode_name(mode)
