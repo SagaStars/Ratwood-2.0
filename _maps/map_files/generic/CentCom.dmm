@@ -1927,6 +1927,7 @@
 /obj/item/leash/chain,
 /obj/item/clothing/neck/roguetown/collar/leather,
 /obj/item/clothing/neck/roguetown/collar/leather,
+/obj/item/rogueweapon/surgery/cautery/branding/slave,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cave/inhumen/wretch/gnollcavern)
 "gV" = (
@@ -4581,6 +4582,7 @@
 /obj/item/leash/chain,
 /obj/item/clothing/neck/roguetown/collar/leather,
 /obj/item/clothing/neck/roguetown/collar/leather,
+/obj/item/rogueweapon/surgery/cautery/branding/slave,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cave/inhumen/wretch/gnollcavern)
 "to" = (
