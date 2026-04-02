@@ -60,16 +60,16 @@
 		switch(primary_weapon_choice)
 			if("A Poison Dagger")
 				backpack_contents += /obj/item/rogueweapon/huntingknife/idagger/steel/corroded
-				H.adjust_skillrank_up_to(/datum/skill/combat/knives, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/knives, SKILL_LEVEL_EXPERT, TRUE)
 				var/additional_weapons = list("Archery", "Magic")
 				var/additional_weapon_choice = input(H, "Effective, but risky. What gives you range?", "TOOLS OF YOUR TRADE") as anything in additional_weapons
 				switch(additional_weapon_choice)
 					if("Archery")
-						H.adjust_skillrank_up_to(/datum/skill/combat/bows, 4, TRUE)
+						H.adjust_skillrank_up_to(/datum/skill/combat/bows, SKILL_LEVEL_EXPERT, TRUE)
 						backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 						beltl = /obj/item/quiver/poisonarrows
 					if("Magic")
-						H.adjust_skillrank_up_to(/datum/skill/magic/arcane, 4, TRUE)
+						H.adjust_skillrank_up_to(/datum/skill/magic/arcane, SKILL_LEVEL_EXPERT, TRUE)
 						backr = /obj/item/rogueweapon/woodstaff/toper
 						H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 						H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/acidsplash)
