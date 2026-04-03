@@ -1,0 +1,7 @@
+author: "kimesik"
+delete-after: True
+changes:
+  - rscadd: "Reformist Psycross"
+  - rscadd: "Three fashion options for Psydonic Heretic Spy"
+  - balance: "Psydonic Heretic Spy (Orthodoxist option) gets nocshaded gas mask."
+  - bugfix: "Heretic & Heretic Spy bracer fix"
