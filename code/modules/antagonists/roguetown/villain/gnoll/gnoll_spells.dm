@@ -9,6 +9,7 @@
 	howl_sounds = list('sound/vo/mobs/gnoll/yeen_howl.ogg')
 	howl_sounds_far = list('sound/vo/mobs/hyena/gnoll_distant.ogg')
 	howl_antag_type = /datum/antagonist/gnoll
+	howl_channels = list(HOWL_CHANNEL_GNOLL) // gnolls only — separate channel from werewolves/druids
 	howl_distance_limit = 50
 	howl_distance_volume = 25
 	howl_prompt_text = "Howl at the bloodied sky..."
