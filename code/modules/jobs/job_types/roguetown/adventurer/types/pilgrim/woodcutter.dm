@@ -1,7 +1,7 @@
 /datum/advclass/woodworker
 	name = "Woodcutter"
-	tutorial = "You are a strong wood worker, armed with an axe, you can gather wood \
-	either for yourself, or for others. You are an expert carpenter too, so you can bend wood into items you need."
+	tutorial = "You are a woodworker, physically capable of falling any tree yet knowledgeable \
+	in the ways of bending wood to your will. With enough time, your only limit is your imagination."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/woodworker
