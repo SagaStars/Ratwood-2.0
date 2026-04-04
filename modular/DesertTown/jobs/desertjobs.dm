@@ -96,7 +96,7 @@
 #define SLAVE		(1<<2)
 // #define ORPHAN		(1<<3)
 #define AMIR		(1<<4)
-#define DTSHOPHAND	(1<<5)
+// #define DTSHOPHAND	(1<<5)
 // #define CLERK 		(1<<6)
 // #define MAGEAPPRENTICE	(1<<7)
 // #define APOTHECARY	(1<<8)
