@@ -89,6 +89,7 @@
 		cloak = /obj/item/clothing/cloak/citywatch/janissary
 		head = /obj/item/clothing/head/roguetown/helmet/janissaryhelm
 		shoes = /obj/item/clothing/shoes/roguetown/shalal
+		shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/zyb
 	else
 		cloak = /obj/item/clothing/cloak/stabard/surcoat/guard
 		head = /obj/item/clothing/head/roguetown/helmet/kettle/
@@ -161,6 +162,7 @@
 		cloak = /obj/item/clothing/cloak/citywatch/janissary
 		head = /obj/item/clothing/head/roguetown/helmet/janissaryhelm
 		shoes = /obj/item/clothing/shoes/roguetown/shalal
+		shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/zyb
 	else
 		cloak = /obj/item/clothing/cloak/stabard/surcoat/guard
 		head = /obj/item/clothing/head/roguetown/helmet/kettle/
