@@ -124,9 +124,9 @@
 	if(!ishuman(targets[1]))
 		revert_cast()
 		return FALSE
-	var/mob/living/carbon/human/H = targets[1]
+	var/mob/living/carbon/human/target = targets[1]
 	
-	if(!length(H.vices))
+	if(!length(target.vices))
 		to_chat(user, span_warning("They have no vices."))
 		revert_cast()
 		return FALSE
@@ -137,33 +137,36 @@
 
 	var/list/vice_names
 
-	if(HAS_TRAIT(H, TRAIT_DECEIVING_MEEKNESS) && user.get_skill_level(/datum/skill/magic/holy) <= SKILL_LEVEL_NOVICE)
-		if(!length(fake_vices_cache[H]))
+	// If you fail this check, the spell will try to convincingly lie to you about the vices you don't already know.
+	if(HAS_TRAIT(target, TRAIT_DECEIVING_MEEKNESS) && user.get_skill_level(/datum/skill/magic/holy) <= SKILL_LEVEL_NOVICE)
+		if(!fake_vices_cache[target])
 			
-			var/list/vice_paths = generate_vice_paths(H, our_human)
+			// Gather up what vices the caster knows to be true, then randomize the rest.
+			var/list/vice_paths = generate_vice_paths(target, our_human)
 
-			// Now convert all the paths to relevant names
+			// Now convert all the typepaths to presentable names that will be shown and saved.
 			vice_names = list()
 			for(var/vice in vice_paths)
 				var/datum/charflaw/vice_ref = GLOB.charflaw_singletons[vice]
 				vice_names += vice_ref.name
-			vice_names = shuffle(vice_names) // to try and hide the fact that we copied those traits in generate_vice_paths
+			vice_names = shuffle(vice_names) // hiding the fact that we copied traits first, in generate_vice_paths
 
-			fake_vices_cache[H] = vice_names.Copy()
+			fake_vices_cache[target] = vice_names.Copy()
 		else
-			var/list/fakey = fake_vices_cache[H]
+			var/list/fakey = fake_vices_cache[target]
 			vice_names = fakey.Copy()
 
-		if(prob(50 + ((H.STAPER - 10) * 10)))
-			to_chat(H, span_warning("A pair of prying eyes were laid on me..."))
+		if(prob(50 + ((target.STAPER - 10) * 10)))
+			to_chat(target, span_warning("A pair of prying eyes were laid on me..."))
 
-	if(!vice_names) // if the caster actually passed the check, show real vices instead
+	if(!vice_names) // if the caster actually passed the check, show real vices instead. 
 		vice_names = list()
-		for(var/datum/charflaw/charflaw in H.vices)
+		for(var/datum/charflaw/charflaw in target.vices)
 			vice_names += charflaw.name
 
 	if(!length(vice_names)) // very necessary failsafe, especially if faking one vice and the roll fails FIVE TIMES
 		to_chat(user, span_warning("They have no vices."))
+		revert_cast() // shhh, they do have vices but we don't want you to know that
 		return FALSE
 
 	var/vices_string = english_list(vice_names)
@@ -175,14 +178,14 @@
 
 /// Generate a convincing lie (or half-truth) about the target's vices, both to be displayed, and to be saved for later in our copy of the spell.
 /// Returns a list of charflaw datum typepaths.
-/obj/effect/proc_holder/spell/invoked/baothavice/proc/generate_vice_paths(mob/living/carbon/human/H, mob/living/carbon/human/our_human)
+/obj/effect/proc_holder/spell/invoked/baothavice/proc/generate_vice_paths(mob/living/carbon/human/target, mob/living/carbon/human/our_human)
 	RETURN_TYPE(/list)
 	var/list/vice_paths = list()
-	var/vices_to_gen = max(length(H.vices), 1) // We decrement this when we're guaranteeed to know a vice. 
+	var/vices_to_gen = max(length(target.vices), 1) // We decrement this when we're guaranteeed to know a vice. 
 	var/baothamarked_nympho_check = FALSE
 
 	// First, we'll copy vices that are readily apparent to the caster, so as to make the readout convincing. Thankfully, we will only have to do this once per person.
-	for(var/datum/charflaw/vice_to_get in H.vices)
+	for(var/datum/charflaw/vice_to_get in target.vices)
 		// Special cases first, since they're quick to check. These can't just fit in a list.
 		switch(vice_to_get.type)
 			// Sadists and masochists already get messages when they examine *each other*.
@@ -229,7 +232,8 @@
 					vice_paths += vice_to_get.type
 					vices_to_gen--
 					continue
-		// These vices have an obvious physical presence, at least when unmasked. We will try to copy these if they're on the target, and later skip them during random gen.
+		// These vices have an obvious physical presence, at least when unmasked.
+		// We will try to copy these if they're on the target, and later skip any fake vices that are on this list.
 		if(vice_to_get.type in CHARFLAWS_PHYSICAL_TYPES)
 			vice_paths += vice_to_get.type
 			vices_to_gen--
