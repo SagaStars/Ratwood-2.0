@@ -565,14 +565,6 @@
 	if(!(our_area.viewing_area))
 		owner.remove_status_effect(/datum/status_effect/buff/viewingbuff)
 
-// /datum/status_effect/buff/viewingbuff/on_apply()
-// 	. = ..()
-// 	ADD_TRAIT(owner, TRAIT_LONGSTRIDER, id)
-
-// /datum/status_effect/buff/viewingbuff/on_remove()
-// 	. = ..()
-// 	REMOVE_TRAIT(owner, TRAIT_LONGSTRIDER, id)
-
 #define MIRACLE_HEALING_FILTER "miracle_heal_glow"
 
 /datum/status_effect/buff/healing
