@@ -67,6 +67,9 @@
 		/obj/item/powderflask,
 	)
 	neck = /obj/item/clothing/neck/roguetown/horus
+	head = /obj/item/clothing/head/roguetown/chaperon/brown
+	armor = /obj/item/clothing/suit/roguetown/shirt/robe/merchant
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/sailor
 	pants = /obj/item/clothing/under/roguetown/tights/sailor
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	wrists = /obj/item/storage/keyring/merchant
@@ -74,21 +77,17 @@
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	id = /obj/item/clothing/ring/gold
 	backr = /obj/item/storage/backpack/rogue/satchel
+	if(should_wear_masc_clothes(H))
+		shoes = /obj/item/clothing/shoes/roguetown/boots/leather
+		H.dna.species.soundpack_m = new /datum/voicepack/male/wizard()
+	else if(should_wear_femme_clothes(H))
+		shoes = /obj/item/clothing/shoes/roguetown/gladiator
 	if(SSmapping.config.map_name == "Desert Town")
 		head = /obj/item/clothing/head/roguetown/sultan/merchant
 		armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/open
 		shirt = /obj/item/clothing/suit/roguetown/shirt/robe/bisht/merchantbisht
 		if(should_wear_masc_clothes(H))
 			shoes = /obj/item/clothing/shoes/roguetown/shalal
-			H.dna.species.soundpack_m = new /datum/voicepack/male/wizard()
-		else if(should_wear_femme_clothes(H))
-			shoes = /obj/item/clothing/shoes/roguetown/gladiator
-	else
-		head = /obj/item/clothing/head/roguetown/chaperon/brown
-		armor = /obj/item/clothing/suit/roguetown/shirt/robe/merchant
-		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/sailor
-		if(should_wear_masc_clothes(H))
-			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			H.dna.species.soundpack_m = new /datum/voicepack/male/wizard()
 		else if(should_wear_femme_clothes(H))
 			shoes = /obj/item/clothing/shoes/roguetown/gladiator
