@@ -32,11 +32,9 @@
 		You owe your life to the Sultan, for it was his coin that allowed you to continue your studies in these dark times. \
 		In return, you have proven time and time again as justicar and trusted advisor to their reign.",
 		/datum/job/roguetown/shophand = "You work the largest store in Al-Ashur by grace of the Merchant who has shackled you to this drudgery. The work of stocking shelves and taking inventory for your employer is mind-numbing and repetitive--but at least you have a roof over your head and comfortable surroundings. With time, perhaps you will one day be more than a glorified servant.",
-
 	)
 	/// Jobs that this map won't use
 	blacklist = list(
-		
 		// /datum/job/roguetown/adventurer//Adventurers (Could rename which are 'foreigners but who cares)'
 		// /datum/job/roguetown/wretch,
 		// /datum/job/roguetown/bandit,
@@ -44,7 +42,7 @@
 		// /datum/job/roguetown/trader,
 		// /datum/job/roguetown/assassin,
 
-		// /datum/job/roguetown/lord,// sultan
+		// /datum/job/roguetown/lord,// sultan//moved to an if-map-then-outfit
 		/datum/job/roguetown/knight,// cataphract
 		/datum/job/roguetown/hand,// vizier
 		// /datum/job/roguetown/suitor,
@@ -70,8 +68,8 @@
 		/datum/job/roguetown/sergeant,//janissary sergeant
 		// /datum/job/roguetown/squire,
 		// /datum/job/roguetown/veteran,
-		/datum/job/roguetown/watchcaptain,//remember to untick this when that's merged
-		/datum/job/roguetown/wardenmaster,//
+		/datum/job/roguetown/watchcaptain,
+		/datum/job/roguetown/wardenmaster,
 
 		//trader (probably fine to keep as it is)
 
