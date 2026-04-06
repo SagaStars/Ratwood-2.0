@@ -1154,7 +1154,8 @@
 	alternate_worn_layer = CLOAK_BEHIND_LAYER
 	slot_flags = ITEM_SLOT_BACK_R|ITEM_SLOT_CLOAK
 
-/obj/item/clothing/cloak/half//don't make a subtype of this unless you can account for it flipping side to side when you right click
+//don't make a subtype of this unless you can account for it flipping side to side when you right click
+/obj/item/clothing/cloak/half
 	name = "halfcloak"
 	desc = ""
 	icon_state = "halfcloak"
