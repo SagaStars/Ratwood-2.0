@@ -7,7 +7,7 @@
 	classic_keys = list("Ctrl")
 	name = "block_movement"
 	full_name = "Block movement"
-	description = "Prevents you from moving"
+	description = "Holds you in place so you can turn"
 	//keybind_signal = COMSIG_KB_MOB_BLOCKMOVEMENT_DOWN
 
 /datum/keybinding/mob/prevent_movement/down(client/user, turf/target, mousepos_x, mousepos_y)
@@ -21,6 +21,25 @@
 	if(.)
 		return
 	user.movement_locked = FALSE
+
+/datum/keybinding/mob/block_movement
+	hotkey_keys = list("CtrlShift")
+	classic_keys = list("CtrlShift")
+	name = "prevent_movement"
+	full_name = "Prevent Movement"
+	description = "Prevents you from moving completely"
+
+/datum/keybinding/mob/block_movement/down(client/user, turf/target, mousepos_x, mousepos_y)
+	. = ..()
+	if(.)
+		return
+	user.movement_blocked = TRUE
+
+/datum/keybinding/mob/block_movement/up(client/user, turf/target)
+	. = ..()
+	if(.)
+		return
+	user.movement_blocked = FALSE
 
 /*
 /datum/keybinding/mob/stop_pulling

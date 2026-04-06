@@ -148,7 +148,9 @@
 	var/last_asset_job = 0
 	var/last_completed_asset_job = 0
 
-	///Are we locking our movement input?
+	/// Are we completely blocking movement input? This prevents moving and turning
+	var/movement_blocked = FALSE
+	/// Are we locking our movement input? This holds you in place so you can turn on the spot
 	var/movement_locked = FALSE
 
 	/// A rolling buffer of any keys held currently
