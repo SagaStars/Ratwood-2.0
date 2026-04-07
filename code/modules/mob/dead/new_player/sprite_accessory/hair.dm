@@ -803,7 +803,7 @@
 	icon_state = "hyenamane"
 
 /datum/sprite_accessory/hair/head/hyenamaneshort
-	name = "Hyena Mane"
+	name = "Hyena Mane Short"
 	icon_state = "hyenamaneshort"
 
 /datum/sprite_accessory/hair/head/forelock
