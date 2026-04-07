@@ -332,7 +332,7 @@
 		shirt = /obj/item/clothing/suit/roguetown/armor/leather/newkeep/heiress
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/short
 	armor = /obj/item/clothing/suit/roguetown/armor/longcoat
-	cloak = /obj/item/clothing/cloak/half/shadowcloak
+	cloak = /obj/item/clothing/cloak/shadowcloak
 	if(SSmapping.config.map_name == "Desert Town")
 		cloak = /obj/item/clothing/cloak/raincloak/amir
 		shoes = /obj/item/clothing/shoes/roguetown/gladiator
