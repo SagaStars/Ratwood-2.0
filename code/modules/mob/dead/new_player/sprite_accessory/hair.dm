@@ -462,10 +462,6 @@
 	name = "Nitori"
 	icon_state = "nitori"
 
-/datum/sprite_accessory/hair/head/newyou
-	name = "New You"
-	icon_state = "newyou"
-
 /datum/sprite_accessory/hair/head/odango
 	name = "Odango"
 	icon_state = "odango"
@@ -569,10 +565,6 @@
 /datum/sprite_accessory/hair/head/countryponytailalt
 	name = "Ponytail (Country Alt)"
 	icon_state = "countryalt"
-
-/datum/sprite_accessory/hair/head/ponytailyeager
-	name = "Ponytail (Yeager)"
-	icon_state = "ponytail_yeager"
 
 /datum/sprite_accessory/hair/head/ponytailwitcher
 	name = "Ponytail (Witcher)"
@@ -810,6 +802,10 @@
 	name = "Hyena Mane"
 	icon_state = "hyenamane"
 
+/datum/sprite_accessory/hair/head/hyenamaneshort
+	name = "Hyena Mane"
+	icon_state = "hyenamaneshort"
+
 /datum/sprite_accessory/hair/head/forelock
 	name = "Forelock"
 	icon_state = "forelock"
@@ -846,10 +842,6 @@
 	name = "Bog"
 	icon_state = "bog"
 
-/datum/sprite_accessory/hair/head/scout
-	name = "Scout"
-	icon_state = "scout"
-
 /datum/sprite_accessory/hair/head/son2
 	name = "Son (Alt)"
 	icon_state = "son2"
@@ -861,10 +853,6 @@
 /datum/sprite_accessory/hair/head/amazon
 	name = "Amazon"
 	icon_state = "amazon"
-
-/datum/sprite_accessory/hair/head/longstraightponytail
-	name = "Long Ponytail"
-	icon_state = "longstraightponytail"
 
 /datum/sprite_accessory/hair/head/barmaid
 	name = "Barmaid"
@@ -1562,10 +1550,6 @@
 	name = "Emperor"
 	icon_state = "emperor"
 
-/datum/sprite_accessory/hair/head/female
-	name = "Female"
-	icon_state = "female"
-
 /datum/sprite_accessory/hair/head/empress
 	name = "Empress"
 	icon_state = "empress"
@@ -1589,10 +1573,6 @@
 /datum/sprite_accessory/hair/head/martyr
 	name = "Martyr"
 	icon_state = "martyr"
-
-/datum/sprite_accessory/hair/head/neuter
-	name = "Neuter"
-	icon_state = "neuter"
 
 /datum/sprite_accessory/hair/head/hprotagonist
 	name = "Hprotagonist"
