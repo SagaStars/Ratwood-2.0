@@ -2149,21 +2149,12 @@
 		visible_message(span_info("[src] looks up."))
 	var/turf/ceiling = get_step_multiz(src, UP)
 	var/turf/T = get_turf(src)
+	var/datum/controller/subsystem/ParticleWeather/PW = SSParticleWeather //used so we can see what's the weather outside
 	if(!ceiling) //We are at the highest z-level.
 		if(T.can_see_sky())
-			switch(GLOB.forecast)
-				if("prerain")
-					to_chat(src, span_warning("Dark clouds gather..."))
-					return
-				if("rain")
-					to_chat(src, span_warning("A wet wind blows."))
-					return
-				if("rainbow")
-					to_chat(src, span_notice("A beautiful rainbow!"))
-					return
-				if("fog")
-					to_chat(src, span_warning("I can't see anything, the fog has set in."))
-					return
+			if(PW.runningWeather)
+				to_chat(src, span_warning("[PW.runningWeather.warning_message]"))
+				return
 			to_chat(src, span_warning("There is nothing special to say about this weather."))
 			do_time_change()
 		return
@@ -2172,6 +2163,8 @@
 		return
 
 	if(T.can_see_sky())
+		if(PW.runningWeather)
+			to_chat(src, span_warning("[PW.runningWeather.warning_message]"))
 		do_time_change()
 
 	var/ttime = 10
