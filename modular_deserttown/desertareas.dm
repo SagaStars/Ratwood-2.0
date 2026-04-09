@@ -240,18 +240,17 @@
 
 /area/rogue/outdoors/banditcamp/desert
 	name = "Bandit Camp"
-	droning_sound = 'sound/music/area/desert/faithless.ogg'
-	droning_sound_dusk = 'sound/music/area/desert/faithless.ogg'
-	droning_sound_night = 'sound/music/area/desert/faithless.ogg'
+	droning_sound = 'sound/music/area/desert/stronghold.ogg'
+	droning_sound_dusk = 'sound/music/area/desert/stronghold.ogg'
+	droning_sound_night = 'sound/music/area/desert/stronghold.ogg'
 	first_time_text = "A Gathering of Thieves"
 	deathsight_message = "hidden among thieves, in the hoard of a dragon"
 
-
 /area/rogue/indoors/banditcamp/desert
 	name = "Bandit Camp"
-	droning_sound = 'sound/music/area/desert/faithless.ogg'
-	droning_sound_dusk = 'sound/music/area/desert/faithless.ogg'
-	droning_sound_night = 'sound/music/area/desert/faithless.ogg'
+	droning_sound = 'sound/music/area/desert/stronghold.ogg'
+	droning_sound_dusk = 'sound/music/area/desert/stronghold.ogg'
+	droning_sound_night = 'sound/music/area/desert/stronghold.ogg'
 	deathsight_message = "hidden among thieves, in the hoard of a dragon"
 
 /area/rogue/outdoors/town/desert
@@ -410,22 +409,6 @@
 	name = "palace basement"
 	keep_area = TRUE
 	town_area = TRUE
-
-/area/rogue/outdoors/banditcamp/desert
-	name = "Bandit Camp"
-	droning_sound = 'sound/music/area/desert/faithless.ogg'
-	droning_sound_dusk = 'sound/music/area/desert/faithless.ogg'
-	droning_sound_night = 'sound/music/area/desert/faithless.ogg'
-	first_time_text = "A Gathering of Thieves"
-	deathsight_message = "hidden among thieves, in the hoard of a dragon"
-
-
-/area/rogue/indoors/banditcamp/desert
-	name = "Bandit Camp"
-	droning_sound = 'sound/music/area/desert/faithless.ogg'
-	droning_sound_dusk = 'sound/music/area/desert/faithless.ogg'
-	droning_sound_night = 'sound/music/area/desert/faithless.ogg'
-	deathsight_message = "hidden among thieves, in the hoard of a dragon"
 
 /area/rogue/indoors/town/desert/arenaview
 	name = "Grand Arena"
