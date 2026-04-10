@@ -1281,6 +1281,7 @@
 	icon_state = "cross_zizo_u"
 	divine = FALSE
 	max_integrity = 350
+	
 /obj/structure/fluff/psycross/graggar
 	name = "vicious cross"
 	desc = "An unholy symbol wrought from stone. It promises glory to the conqueror and chains to the conquered."

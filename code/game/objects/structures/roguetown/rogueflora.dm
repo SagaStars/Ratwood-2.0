@@ -915,7 +915,7 @@
 	mush_light_color = null
 	int_req = 20
 	mush_animate = FALSE
-	// static_debris = list(/obj/item/rogueore/lithmyc = 1)
+	static_debris = list(/obj/item/rogueore/iron = 8)
 	mush_scream = FALSE
 
 /obj/structure/flora/mushroomcluster
