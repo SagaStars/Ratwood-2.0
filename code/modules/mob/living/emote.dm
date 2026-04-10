@@ -2448,44 +2448,44 @@
 	emote("fortune", intentional = TRUE)
 
 /datum/emote/living/praysuicide
-    key = "praysuicide"
-    key_third_person = "utters their last words"
-    message = ""
-    emote_type = EMOTE_AUDIBLE
-    stat_allowed = UNCONSCIOUS
-    show_runechat = FALSE
+	key = "praysuicide"
+	key_third_person = "utters their last words"
+	message = ""
+	emote_type = EMOTE_AUDIBLE
+	stat_allowed = UNCONSCIOUS
+	show_runechat = FALSE
 
 /mob/living/carbon/human/verb/emote_praysuicide()
-    set name = "Suicidal pray"
-    set category = "Emotes"
-    emote("praysuicide", intentional = TRUE)
+	set name = "Suicidal pray"
+	set category = "Emotes"
+	emote("praysuicide", intentional = TRUE)
 
 /datum/emote/living/praysuicide/run_emote(mob/user, params, type_override, intentional)
-    if(!user)
-        return FALSE
+	if(!user)
+		return FALSE
 
-    var/mob/living/L = user
-
-
-    to_chat(L, span_danger("I pray to my patron for my death... and I am heard."))
+	var/mob/living/L = user
 
 
-    var/lastmsg = params
-    if(!lastmsg)
-        lastmsg = input("Whisper your final words:", "Last Words") as text|null
-    if(!lastmsg)
-        return FALSE
+	to_chat(L, span_danger("I pray to my patron for my death... and I am heard."))
 
-    L.whisper(lastmsg)
+
+	var/lastmsg = params
+	if(!lastmsg)
+		lastmsg = input("Whisper your final words:", "Last Words") as text|null
+	if(!lastmsg)
+		return FALSE
+
+	L.whisper(lastmsg)
 
 	sleep(50)
 
-    if(iscarbon(L))
-        var/mob/living/carbon/C = L
-        C.adjustOxyLoss(200)
-    else if(isliving(L))
-        L.death()
-    else
-        to_chat(L, span_warning("Nothing happens."))
+	if(iscarbon(L))
+		var/mob/living/carbon/C = L
+		C.adjustOxyLoss(200)
+	else if(isliving(L))
+		L.death()
+	else
+		to_chat(L, span_warning("Nothing happens."))
 
-    return TRUE
+	return TRUE
