@@ -1,7 +1,7 @@
 /datum/advclass/woodworker
-	name = "Woodworker"
-	tutorial = "You are a strong Woodworker, armed with an axe, you can gather wood \
-	either for yourself, or for others. You are an expert carpenter too, so you can bend wood into items you need."
+	name = "Woodcutter"
+	tutorial = "You are a woodworker, physically capable of falling any tree yet knowledgeable \
+	in the ways of bending wood to your will. With enough time, your only limit is your imagination."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/woodworker
@@ -53,8 +53,6 @@
 						/obj/item/flint = 1,
 						/obj/item/flashlight/flare/torch = 1,
 						/obj/item/rogueweapon/huntingknife = 1,
-						/obj/item/recipe_book/builder = 1,
-						/obj/item/recipe_book/survival = 1,
 						/obj/item/rogueweapon/scabbard/sheath = 1
 						)
 	if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
@@ -63,3 +61,7 @@
 		armor = /obj/item/clothing/suit/roguetown/armor/workervest
 		pants = /obj/item/clothing/under/roguetown/trou
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
+	if(H.age == AGE_MIDDLEAGED)
+		H.adjust_skillrank_up_to(/datum/skill/labor/lumberjacking, 5, TRUE)
+	if(H.age == AGE_OLD)
+		H.adjust_skillrank_up_to(/datum/skill/labor/lumberjacking, 6, TRUE)

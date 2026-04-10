@@ -1,6 +1,6 @@
 /datum/advclass/scavenger/harvester
 	name = "Harvester"
-	tutorial = "Perhaps terrible fate befell your last homestead, or circumstances conspired to drive you away.\
+	tutorial = "Perhaps terrible fate befell your last homestead, or circumstances conspired to drive you away. \
 	Either way, the soil of these lands are rich and fertile, so you hear. Let us hope you can build something to last the winter."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
@@ -19,32 +19,29 @@
 	..()
 
 	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 
 	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE) //less than a dedicated lumberjack
-	H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 
 	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 
 	H.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/labor/fishing, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/traps, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/carpentry, 3, TRUE) //gotta build your farmstead
-	H.adjust_skillrank(/datum/skill/craft/masonry, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/craft/carpentry, 2, TRUE) //gotta build your farmstead
+	H.adjust_skillrank(/datum/skill/craft/masonry, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/labor/farming, 3, TRUE) //less than a dedicated farmer
 
-	H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 
 	H.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/labor/lumberjacking, 2, TRUE) //probably don't need much higher
-	H.adjust_skillrank(/datum/skill/labor/butchering, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/tanning, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/sewing, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/labor/butchering, 2, TRUE) //rearin' beasts
+	H.adjust_skillrank(/datum/skill/craft/sewing, 1, TRUE) //makin' sacks
 
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	head = /obj/item/clothing/head/roguetown/strawhat
@@ -60,8 +57,6 @@
 		/obj/item/flint = 1,
 		/obj/item/flashlight/flare/torch = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
-		/obj/item/recipe_book/builder = 1,
-		/obj/item/recipe_book/survival = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1,
 		/obj/item/seeds/wheat = 2,
 		/obj/item/seeds/apple = 1,
@@ -79,9 +74,8 @@
 
 /datum/advclass/scavenger/prospector
 	name = "Prospector"
-	tutorial = "You lived a hard life back at your homestead, but tales of riches in the Ferentia have drawn you here.\
-	Perhaps with a bit of luck and skill, you can carve out a new life for yourself."
-	allowed_sexes = list(MALE, FEMALE)
+	tutorial = "Following the promise of rich veins and scrap metal, you come to these lands \
+	to mine and smith, peddling wares to fellow iterant bog-wanderers. Only after building a forge for yourself, of course"
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/refugee/prospector
 
@@ -92,7 +86,7 @@
 		STATKEY_CON = 2,
 		STATKEY_STR = 1,
 		STATKEY_INT = 1,
-		STATKEY_SPD = -2
+		STATKEY_SPD = -1
 	)
 
 /datum/outfit/job/roguetown/refugee/prospector/pre_equip(mob/living/carbon/human/H)
@@ -113,7 +107,6 @@
 		/obj/item/rogueore/iron = 5,
 		/obj/item/flashlight/flare/torch = 1,
 		/obj/item/recipe_book/blacksmithing = 1,
-		/obj/item/recipe_book/survival = 1,
 		/obj/item/armor_brush = 1,
 		/obj/item/polishing_cream = 1
 		)
@@ -149,9 +142,6 @@
 	H.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 
 	H.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/alchemy, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/alchemy, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/labor/lumberjacking, 1, TRUE) 
-	H.adjust_skillrank(/datum/skill/craft/ceramics, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/craft/ceramics, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/carpentry, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/masonry, 3, TRUE) //got to do something with all those rocks you find
