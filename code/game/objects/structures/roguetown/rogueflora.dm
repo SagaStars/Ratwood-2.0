@@ -782,7 +782,7 @@
 	var/mush_animate = TRUE
 	var/mush_scream = TRUE
 
-/obj/structure/flora/rogueshroom/unhappy/Initialize()
+/obj/structure/flora/rogueshroom/unhappy/Initialize(mapload)
 	. = ..()
 	if(mush_animate)
 		animate(src, icon_state = "[icon_state]animated", delay = rand(1, 100), loop = -1, time = 10)
@@ -855,7 +855,7 @@
 
 /obj/structure/flora/rogueshroom/unhappy/random
 
-/obj/structure/flora/rogueshroom/unhappy/random/Initialize()
+/obj/structure/flora/rogueshroom/unhappy/random/Initialize(mapload)
 	. = ..()
 	var/list/mushroom_types = list(
 		/obj/structure/flora/rogueshroom/unhappy       = 249,
