@@ -477,7 +477,6 @@
 	. = ..()
 	icon_state = "bush[pick(5,6)]winter"
 
-
 /obj/structure/flora/rogueshroom
 	name = "mushroom"
 	desc = "Mushrooms are the only happy beings in this land."
