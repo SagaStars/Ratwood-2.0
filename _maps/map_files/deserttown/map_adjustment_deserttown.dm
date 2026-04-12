@@ -9,8 +9,8 @@
 	realm_name = "Al-Ashur"
 	slot_adjust = list(
 		// /datum/job/roguetown/mercenary = 7, //haha fuck you one less slot!!
-		/datum/job/roguetown/apothecary = 1, //just isn't that much room in the bazaar until I remodel things significantly
-		/datum/job/roguetown/gnoll = 3,//hyenas just belong!
+		// /datum/job/roguetown/apothecary = 1, //remodelled the building for more room
+		/datum/job/roguetown/gnoll = 3,//hyenas just belong here!
 	)
 	title_adjust = list(
 		/datum/job/roguetown/lord = list(display_title = "Sultan", f_title = "Sultana"),
