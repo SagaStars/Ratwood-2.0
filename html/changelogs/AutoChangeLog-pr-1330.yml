@@ -1,0 +1,5 @@
+author: "Jamdrawers"
+delete-after: True
+changes:
+  - bugfix: "desert grass can be tilled into soil, should smooth better visually"
+  - bugfix: "missing wretch teleport point on rockhill"
