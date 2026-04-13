@@ -73,7 +73,16 @@
 	ambush_mobs = null
 
 /area/rogue/outdoors/desertdeep/above
-	name = "Deepdesert Above"
+	name = "deep desert above"
+	ambientsounds = AMB_MOUNTAIN
+	ambientnight = AMB_MOUNTAIN
+	soundenv = 17
+	first_time_text = null
+	ambush_times = null
+	ambush_mobs = null
+
+/area/rogue/outdoors/desert/above
+	name = "desert above"
 	ambientsounds = AMB_MOUNTAIN
 	ambientnight = AMB_MOUNTAIN
 	soundenv = 17
