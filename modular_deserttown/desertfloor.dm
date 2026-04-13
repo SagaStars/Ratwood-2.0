@@ -9,7 +9,23 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	landsound = 'sound/foley/jumpland/dirtland.wav'
 	smooth = SMOOTH_TRUE
-	canSmoothWith = list(/turf/open/floor/rogue, /turf/closed/mineral, /turf/closed/wall/mineral)
+	canSmoothWith = list(
+						/turf/open/floor/rogue/grass,
+						/turf/open/floor/rogue/desert_grass,
+						/turf/open/floor/rogue/dunes,
+						/turf/open/floor/rogue/dirt,
+						/turf/open/floor/rogue/dirt/road,
+						/turf/open/floor/rogue/dirt/desert,
+						/turf/open/floor/rogue/dirt/road/desert,
+						/turf/open/floor/rogue/citybrick,
+						/turf/open/floor/rogue/grassred,
+						/turf/open/floor/rogue/grassyel,
+						/turf/open/floor/rogue/grasscold,
+						/turf/open/floor/rogue/grassgrey,
+						/turf/open/floor/rogue/grasspurple,
+						/turf/open/floor/rogue/snowpatchy,
+						/turf/open/floor/rogue/snow,
+						/turf/open/floor/rogue/snowrough,)
 	// slowdown = 1
 
 /turf/open/floor/rogue/dunes/cardinal_smooth(adjacencies)
@@ -171,6 +187,7 @@
 	smooth = SMOOTH_TRUE
 	canSmoothWith = list(
 						/turf/open/floor/rogue/grass,
+						/turf/open/floor/rogue/desert_grass,
 						/turf/open/floor/rogue/dunes,
 						/turf/open/floor/rogue/dirt,
 						/turf/open/floor/rogue/dirt/road,
@@ -206,7 +223,6 @@
 	canSmoothWith = list(
 						/turf/open/floor/rogue/grass,
 						/turf/open/floor/rogue/dunes,
-						/turf/open/floor/rogue/desert_grass,
 						/turf/open/floor/rogue/dirt,
 						/turf/open/floor/rogue/dirt/road,
 						/turf/open/floor/rogue/dirt/desert,
