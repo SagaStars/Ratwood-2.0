@@ -3862,7 +3862,7 @@
 /turf/open/floor/rogue/herringbone{
 	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
 	},
-/area/rogue/outdoors/desert/above)
+/area/rogue/indoors/town/desert)
 "bPY" = (
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/hexstone,
@@ -8633,10 +8633,9 @@
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/town/manor/desert)
 "dZC" = (
-/turf/open/floor/rogue/herringbone{
-	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
-	},
-/area/rogue/outdoors/desert/above)
+/obj/item/bee_smoker,
+/turf/open/floor/rogue/dirt/road/desert,
+/area/rogue/outdoors/desert)
 "dZV" = (
 /obj/structure/fluff/railing/fence{
 	dir = 1
@@ -11009,8 +11008,9 @@
 /turf/open/floor/rogue/citybrick/citybrick1,
 /area/rogue/outdoors/town/desert)
 "feU" = (
+/obj/machinery/light/rogue/candle,
 /turf/closed/wall/mineral/rogue/sandbrick,
-/area/rogue/outdoors/desert/above)
+/area/rogue/indoors/town/desert)
 "feY" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -26322,12 +26322,6 @@
 /obj/item/roguegem/diamond,
 /turf/open/floor/rogue/naturalstone/sandstone,
 /area/rogue/outdoors/desertdeep)
-"lXb" = (
-/obj/structure/mineral_door/wood/deadbolt{
-	dir = 8
-	},
-/turf/open/floor/rogue/sandbrick,
-/area/rogue/outdoors/desert/above)
 "lXr" = (
 /turf/open/floor/rogue/carpet/lord/right,
 /area/rogue/indoors/town/desert/manor)
@@ -36047,7 +36041,7 @@
 /turf/open/floor/rogue/herringbone{
 	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
 	},
-/area/rogue/outdoors/desert/above)
+/area/rogue/indoors/town/desert)
 "qpU" = (
 /obj/structure/fluff/walldeco/stone,
 /turf/closed/wall/mineral/rogue/decostone/mossy/long,
@@ -38694,11 +38688,11 @@
 /turf/open/floor/rogue/tile/harem1,
 /area/rogue/indoors/town/church)
 "rDd" = (
-/obj/machinery/light/rogue/candle,
-/turf/open/floor/rogue/herringbone{
-	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
+/obj/structure/fluff/railing/border{
+	dir = 4
 	},
-/area/rogue/outdoors/desert/above)
+/turf/open/transparent/openspace,
+/area/rogue/indoors/town/desert)
 "rDO" = (
 /obj/structure/spider/stickyweb,
 /turf/open/floor/rogue/dirt/road,
@@ -47087,7 +47081,7 @@
 /turf/open/floor/rogue/herringbone{
 	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
 	},
-/area/rogue/outdoors/desert/above)
+/area/rogue/indoors/town/desert)
 "vrn" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "borderfall";
@@ -410614,7 +410608,7 @@ bdd
 pTT
 bdd
 bdd
-iPi
+dZC
 bdd
 bdd
 gNs
@@ -516920,8 +516914,8 @@ kfI
 kfI
 kfI
 kfI
-kfI
-kfI
+tdE
+tdE
 hUH
 hUH
 hUH
@@ -517220,10 +517214,10 @@ gOo
 uRX
 uRX
 hEm
-gsC
-uRX
-uRX
+dXV
 kfI
+xTn
+tdE
 hUH
 hUH
 hUH
@@ -517523,9 +517517,9 @@ uRX
 uRX
 kfI
 kfI
-nxR
-uRX
-enI
+feU
+kfI
+kfI
 hUH
 hUH
 hUH
@@ -518129,7 +518123,7 @@ wjH
 uRX
 uRX
 uRX
-kfI
+enI
 hUH
 hUH
 hUH
@@ -628657,7 +628651,7 @@ hUH
 hUH
 hUH
 hUH
-hUH
+dJR
 dJR
 dJR
 dJR
@@ -628959,8 +628953,8 @@ hUH
 hUH
 hUH
 hUH
-hUH
 dJR
+pUi
 pUi
 pUi
 pUi
@@ -629261,15 +629255,15 @@ hUH
 hUH
 hUH
 hUH
-hUH
 dJR
 pUi
 pUi
 pUi
+pUi
 dJR
-hUH
-hUH
-hUH
+dJR
+dJR
+dJR
 hUH
 hUH
 hUH
@@ -629563,15 +629557,15 @@ hUH
 hUH
 hUH
 hUH
-hUH
 dJR
 pUi
 pUi
 pUi
+pUi
+pUi
+pUi
+pUi
 dJR
-hUH
-hUH
-hUH
 hUH
 hUH
 hUH
@@ -629865,15 +629859,15 @@ hUH
 hUH
 hUH
 hUH
-hUH
 dJR
+pUi
+pUi
+pUi
+pUi
+pUi
+pUi
+pUi
 dJR
-dJR
-dJR
-dJR
-hUH
-hUH
-hUH
 hUH
 hUH
 hUH
@@ -630167,15 +630161,15 @@ hUH
 hUH
 hUH
 hUH
-hUH
-hUH
-hUH
-hUH
-hUH
-hUH
-hUH
-hUH
-hUH
+dJR
+pUi
+pUi
+pUi
+pUi
+pUi
+pUi
+pUi
+dJR
 hUH
 hUH
 hUH
@@ -630469,15 +630463,15 @@ hUH
 hUH
 hUH
 hUH
-hUH
-hUH
-hUH
-hUH
-hUH
-hUH
-hUH
-hUH
-hUH
+dJR
+dJR
+dJR
+dJR
+dJR
+dJR
+dJR
+dJR
+dJR
 hUH
 hUH
 hUH
@@ -631071,12 +631065,12 @@ hUH
 hUH
 hUH
 hUH
-feU
-feU
-feU
-feU
-feU
-feU
+kfI
+kfI
+kfI
+kfI
+kfI
+kfI
 hUH
 hUH
 hUH
@@ -631373,12 +631367,12 @@ hUH
 hUH
 hUH
 hUH
-feU
-hUH
-hUH
-hUH
-hUH
-feU
+kfI
+dXV
+dXV
+dXV
+dXV
+kfI
 hUH
 dJR
 dJR
@@ -631675,12 +631669,12 @@ hUH
 hUH
 hUH
 hUH
-feU
-fWU
-fWU
-fWU
-fWU
-feU
+kfI
+rDd
+rDd
+rDd
+rDd
+kfI
 hUH
 dJR
 pUi
@@ -631977,12 +631971,12 @@ hUH
 hUH
 hUH
 hUH
-feU
-dZC
+kfI
+uRX
 bPQ
-dZC
+uRX
 vqY
-feU
+kfI
 hUH
 dJR
 pUi
@@ -632279,12 +632273,12 @@ hUH
 hUH
 hUH
 hUH
-feU
-rDd
-dZC
-dZC
-dZC
-feU
+kfI
+nxR
+uRX
+uRX
+uRX
+kfI
 hUH
 dJR
 pUi
@@ -632581,12 +632575,12 @@ hUH
 hUH
 hUH
 eFo
-feU
-dZC
-dZC
-dZC
-dZC
-feU
+kfI
+uRX
+uRX
+uRX
+uRX
+kfI
 hUH
 dJR
 pUi
@@ -632883,12 +632877,12 @@ hUH
 hUH
 hUH
 fQs
-feU
-feU
-lXb
-feU
+kfI
+kfI
+kEt
+kfI
 qpO
-feU
+kfI
 hUH
 dJR
 pUi
@@ -633188,9 +633182,9 @@ fQs
 qbl
 vCh
 dJR
-feU
-hUH
-feU
+kfI
+dXV
+kfI
 dJR
 dJR
 dJR
@@ -633490,9 +633484,9 @@ fQs
 qbl
 dJR
 dJR
-feU
-feU
-feU
+kfI
+kfI
+kfI
 pUi
 pUi
 dJR
@@ -637721,8 +637715,8 @@ dJR
 dJR
 dJR
 dJR
-dJR
-dJR
+hUH
+hUH
 hUH
 hUH
 hUH
@@ -638022,9 +638016,9 @@ pUi
 pUi
 pUi
 pUi
-pUi
-pUi
 dJR
+hUH
+hUH
 hUH
 hUH
 hUH
@@ -638324,8 +638318,8 @@ pUi
 pUi
 pUi
 pUi
-pUi
-pUi
+dJR
+dJR
 dJR
 hUH
 hUH
